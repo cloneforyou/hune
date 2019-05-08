@@ -1,0 +1,12 @@
+{{ partial "header" . }}
+{{ partial "language-filter" . }}
+<main id="content">
+    <div class="links">
+        {{ $paginator := .Paginate (where .Pages "Type" "links") }}
+        {{ range $paginator.Pages }}
+        {{ partial "link" . }}
+        {{ end }}
+    </div><!-- end .links -->
+    {{ template "_internal/pagination.html" . }}
+</main><!-- end #content -->
+{{ partial "footer" . }}

@@ -1,0 +1,36 @@
+languageCode: vi-vn
+copyright: This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.
+title: 12bit.vn links
+description: Browse multiple web development sites at the same time.
+baseURL: /
+theme: news.12bit.vn
+enableGitInfo: true
+enableEmoji: true
+enableRobotsTXT: true
+googleAnalytics: 
+paginate: 40
+outputs:
+  home:
+  - HTML
+  - RSS
+disableKinds:
+  - taxonomyTerm
+params:
+  description: Browse multiple web development sites at the same time.
+  favicon: img/favicon.png
+  images:
+    - img/home.png
+  cta:
+    title: Add my site
+    url: 'https://github.com/12bitvn/news.12bit.vn'
+blackfriday:
+  hrefTargetBlank: true
+  noreferrerLinks: true
+menu:
+  main:
+  - identifier: contribute
+    title: Thêm links
+    url: /pages/about.html
+taxonomies:
+  language: language
+  site: site
