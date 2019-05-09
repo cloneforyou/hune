@@ -6,7 +6,23 @@
 {{ $mainScript := resources.Get "main.js" | minify | fingerprint }}
 <script defer src="{{ $mainScript.RelPermalink }}"></script> -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="/js/jquery-ias.min.js"></script>
+
 <script>
+  var ias = $.ias({
+      container: ".links",
+      item: ".link-list__link",
+      pagination: ".load-more",
+      next: ".load-more a"
+    });
+
+   
+    ias.extension(new IASSpinnerExtension({
+    src: '/img/spinner.gif', // optionally
+}));
+  
+    ias.extension(new IASNoneLeftExtension({text: '&#8226;'}));
+
   function menuToggle() {
     $('#menu-toggle').toggleClass('open');
     $('#nav-mobile').toggleClass('d-none');

@@ -16,10 +16,10 @@
   {{ $post := resources.Get "css/main.scss" }}
   {{ $style :=  $post | resources.ToCSS | minify }}
   <link href="{{ $style.RelPermalink }}" rel="stylesheet" type="text/css" />
-  {{ if eq (getenv "HUGO_ENV") "production" }}
+  <!-- {{ if eq (getenv "HUGO_ENV") "production" }}
   {{ $mainStyle := resources.Get "theme.css" | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $mainStyle.RelPermalink }}">
-  {{ end }}
+  {{ end }} -->
 </head>
 <body>
   <!-- <header id="masthead">
@@ -58,7 +58,7 @@
       </ul>
     </nav> -->
     {{ partial "language-filter" . }}
-    <button class="header__button">Get Started</button>
+    <button class="header__button">Add my site</button>
     <div class="header__nav--mobile">
       <!--  START Hamburger Toggle  -->
       <div id="menu-toggle" class="d-block d-md-none">

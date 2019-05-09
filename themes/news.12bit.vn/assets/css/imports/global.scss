@@ -253,3 +253,9 @@ body {
   text-align: center;
 }
 .timeago {   text-decoration: none; margin-right: 5px;}
+
+.ias-trigger, .ias-noneleft, .ias-spinner{   padding: 50px; }
+.ias-spinner {  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .ias-noneleft { color: $c-primary;}
