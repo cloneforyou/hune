@@ -1,9 +1,17 @@
-<div class="link" target="_blank" rel="nofollow noopener">
-  <h1><a href="{{ .Params.link }}" target="_blank" rel="nofollow noopener">{{ .Title }}</a></h1>
-  <div class="meta">
-    <span>{{ .Date.Format "02-01-2006" }} by <a href="/site/{{ .Params.site }}" rel="nofollow noopener">{{ .Params.site | replaceRE "^www.([^/]+).*" "$1" }}</a></span>
-    <span class="divider">&#8226;</span>
-    <a
+<div class="  link-list__link" target="_blank" rel="nofollow noopener">
+  <a class="" href="{{ .Params.link }}" target="_blank" rel="nofollow noopener"
+    aria-describedby="link_meta">
+    <span class="link-list__link__label">
+      {{ .Title }}
+    </span> </a>
+  <span class="link-list__link__meta " id="link_meta" aria-hidden="true">
+    <span class="link-list__link__meta"> {{ .Date.Format "02-01-2006" }} &#8226;
+      <a href="/site/{{ .Params.site }}"
+        rel="nofollow noopener">{{ .Params.site | replaceRE "^www.([^/]+).*" "$1" }}</a>
+    </span>
+  </span>
+  <!-- <span class="divider">&#8226;</span> -->
+  <!-- <a
       href="#"
       class="js-b-additem i-octicon save"
       data-icon="star"
@@ -11,6 +19,6 @@
       data-title={{ .Title }}
       data-date='{{ .Date.Format "02-01-2006" }}'
       data-site='{{ .Params.site | replaceRE "^www.([^/]+).*" "$1" }}'>
-    </a>
-  </div>
+    </a> -->
 </div>
+

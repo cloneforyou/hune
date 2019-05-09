@@ -1,9 +1,23 @@
 <footer id="colophon">
-  <p>made with ☕ by <a href="https://12bit.vn" target="_blank" rel="nofollow noopener">12bit.vn</a></p>
+  <!-- <p>made with ☕ by <a href="https://12bit.vn" target="_blank" rel="nofollow noopener">12bit.vn</a></p> -->
 </footer>
 </div>
-{{ template "_internal/google_analytics_async.html" . }}
+<!-- {{ template "_internal/google_analytics_async.html" . }}
 {{ $mainScript := resources.Get "main.js" | minify | fingerprint }}
-<script defer src="{{ $mainScript.RelPermalink }}"></script>
+<script defer src="{{ $mainScript.RelPermalink }}"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+  function menuToggle() {
+    $('#menu-toggle').toggleClass('open');
+    $('#nav-mobile').toggleClass('d-none');
+    $('body').toggleClass('no-scroll');
+}
+
+$('#menu-toggle, #nav-mobile').click(function () {
+    menuToggle();
+});
+
+  </script>
 </body>
+
 </html>

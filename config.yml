@@ -1,6 +1,6 @@
-languageCode: vi-vn
+languageCode: en-us
 copyright: This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.
-title: 12bit.vn links
+title: hune
 description: Browse multiple web development sites at the same time.
 baseURL: /
 theme: news.12bit.vn
@@ -22,7 +22,7 @@ params:
     - img/home.png
   cta:
     title: Add my site
-    url: 'https://github.com/12bitvn/news.12bit.vn'
+    url: 'https://github.com/cioranique/hune'
 blackfriday:
   hrefTargetBlank: true
   noreferrerLinks: true

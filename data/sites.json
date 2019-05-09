@@ -1,28 +1,28 @@
 {
-  "12bit.vn": {
-    "rss_url": "https://12bit.vn/articles/index.xml",
-    "language": "Vietnamese"
-  },
-  "thefullsnack.com": {
-    "rss_url": "https:///thefullsnack.com/rss.xml",
-    "language": "Vietnamese"
-  },
-  "completejavascript.com": {
-    "rss_url": "https://completejavascript.com/feed/",
-    "language": "Vietnamese"
-  },
-  "quan-cam.com": {
-    "rss_url": "http://quan-cam.com/rss",
-    "language": "Vietnamese"
-  },
-  "toidicodedao.com": {
-    "rss_url": "https://toidicodedao.com/feed/",
-    "language": "Vietnamese"
-  },
-  "ehkoo.com": {
-    "rss_url": "https://ehkoo.com/rss.xml",
-    "language": "Vietnamese"
-  },
+  // "12bit.vn": {
+  //   "rss_url": "https://12bit.vn/articles/index.xml",
+  //   "language": "Vietnamese"
+  // },
+  // "thefullsnack.com": {
+  //   "rss_url": "https:///thefullsnack.com/rss.xml",
+  //   "language": "Vietnamese"
+  // },
+  // "completejavascript.com": {
+  //   "rss_url": "https://completejavascript.com/feed/",
+  //   "language": "Vietnamese"
+  // },
+  // "quan-cam.com": {
+  //   "rss_url": "http://quan-cam.com/rss",
+  //   "language": "Vietnamese"
+  // },
+  // "toidicodedao.com": {
+  //   "rss_url": "https://toidicodedao.com/feed/",
+  //   "language": "Vietnamese"
+  // },
+  // "ehkoo.com": {
+  //   "rss_url": "https://ehkoo.com/rss.xml",
+  //   "language": "Vietnamese"
+  // },
   "alligator.io": {
     "rss_url": "https://alligator.io/feed.xml",
     "language": "English"
@@ -55,12 +55,20 @@
     "rss_url": "https://medium.com/feed/google-developers",
     "language": "English"
   },
-  "blog.bitsrc.io": {
-    "rss_url": "https://blog.bitsrc.io/feed",
+  "designmodo.com": {
+    "rss_url": "http://feeds.feedburner.com/designmodo?format=xml",
     "language": "English"
   },
   "blog.chromium.org": {
     "rss_url": "https://blog.chromium.org/feeds/posts/default?alt=rss",
+    "language": "English"
+  },
+  "reddit.com": {
+    "rss_url": "https://www.reddit.com/r/all.rss",
+    "language": "English"
+  },
+  "scotch.io": {
+    "rss_url": "https://scotch.io/feed",
     "language": "English"
   }
 }
