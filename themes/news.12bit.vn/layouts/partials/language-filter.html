@@ -1,6 +1,6 @@
 <nav class="header__nav  header__nav--main">
     <ul class="header__nav-list">
-        <li> <a href="/" class="{{ if (.Page.IsHome) }}active{{ end }} header__nav-link">All</a></li>
+        <!-- <li> <a href="/" class="{{ if (.Page.IsHome) }}active{{ end }} header__nav-link">All</a></li> -->
 
         {{ $pagePermalink := .Page.Permalink }}
         {{ range .Site.Taxonomies.language }}
