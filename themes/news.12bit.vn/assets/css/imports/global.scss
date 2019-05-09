@@ -10,8 +10,9 @@ body {
   .links {
       max-width: 900px;
       margin: 0 auto;
+      padding: 10px;
   }
-   .links a {text-decoration: none; color: #5e81fe}
+   .links a { color: #5e81fe}
   
   .link-list__link {
     color: #333;
@@ -251,3 +252,4 @@ body {
   padding: 50px;
   text-align: center;
 }
+.timeago {   text-decoration: none; margin-right: 5px;}

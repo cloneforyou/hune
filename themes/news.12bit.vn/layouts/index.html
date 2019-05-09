@@ -1,6 +1,6 @@
 {{ partial "header" . }}
 <!-- {{ partial "language-filter" . }} -->
-<main id="content">
+<main>
         <div class="links">
                 {{ $paginator := .Paginate (where .Pages "Type" "links") }}
                 {{ range $paginator.Pages }}
@@ -9,7 +9,7 @@
                 <div class="load-more center">
                         {{ if .Paginator.HasNext }}
                                 <a class="button" href="{{ .Paginator.Next.URL }}">More posts</a>
-                                <br>
+                         
                         {{ end }}
                        
                 </div>
