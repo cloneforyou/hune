@@ -2,72 +2,72 @@
 
   "bitcoinmagazine.com": {
     "rss_url": "https://bitcoinmagazine.com/feed",
-    "topic": "crypto"
+    "language": "crypto"
   },
   "news.bitcoin.com": {
     "rss_url": "https://news.bitcoin.com/feed/",
-    "topic": "crypto"
+    "language": "crypto"
   },
   "bitcoinist.com": {
     "rss_url": "https://bitcoinist.com/feed/",
-    "topic": "crypto"
+    "language": "crypto"
   },
   "ccn.com": {
     "rss_url": "https://www.ccn.com/crypto/feed",
-    "topic": "crypto"
+    "language": "crypto"
   }, 
   "coindesk.com": {
     "rss_url": "https://feeds.feedburner.com/CoinDesk?format=xml",
-    "topic": "crypto"
+    "language": "crypto"
   },
   "cointelegraph.com": {
     "rss_url": "https://cointelegraph.com/rss",
-    "topic": "crypto"
+    "language": "crypto"
   },
   "themerkle.com": {
     "rss_url": "https://themerkle.com/feed/", 
-    "topic": "crypto"
+    "language": "crypto"
   },
   "alligator.io": {
     "rss_url": "https://alligator.io/feed.xml",
-    "topic": "Webdev"
+    "language": "Webdev"
   },
   "www.smashingmagazine.com": {
     "rss_url": "https://www.smashingmagazine.com/feed/",
-    "topic": "Webdev"
+    "language": "Webdev"
   },
   "hackernoon.com": {
     "rss_url": "https://hackernoon.com/feed",
-    "topic": "Webdev"
+    "language": "Webdev"
   },
   "medium.freecodecamp.org": {
     "rss_url": "https://medium.freecodecamp.org/feed",
-    "topic": "Webdev"
+    "language": "Webdev"
   },
   "css-tricks.com": {
     "rss_url": "http://feeds.feedburner.com/CssTricks?fmt=xml",
-    "topic": "Webdev"
+    "language": "Webdev"
   },
 
   "medium.com/google-developers": {
     "rss_url": "https://medium.com/feed/google-developers",
-    "topic": "Webdev"
+    "language": "Webdev"
   },
   "designmodo.com": {
     "rss_url": "http://feeds.feedburner.com/designmodo?format=xml",
-    "topic": "Webdev"
+    "language": "Webdev"
   },
   "blog.chromium.org": {
     "rss_url": "https://blog.chromium.org/feeds/posts/default?alt=rss",
-    "topic": "Webdev"
+    "language": "Webdev"
   },
   "reddit.com": {
     "rss_url": "https://www.reddit.com/r/all.rss",
-    "topic": "Webdev"
+    "language": "Webdev"
   },
   "scotch.io": {
     "rss_url": "https://scotch.io/feed",
-    "topic": "Webdev"
+    "language": "Webdev"
   }
 }
   
