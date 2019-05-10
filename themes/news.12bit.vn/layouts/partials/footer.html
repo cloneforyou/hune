@@ -16,12 +16,12 @@
       next: ".more"
     });
 
-   
+    ias.extension(new IASNoneLeftExtension({text: '&#8226;'}));
+
     ias.extension(new IASSpinnerExtension({
     src: '/img/spinner.gif', // optionally
 }));
   
-    ias.extension(new IASNoneLeftExtension({text: '&#8226;'}));
 
   function menuToggle() {
     $('#menu-toggle').toggleClass('open');
