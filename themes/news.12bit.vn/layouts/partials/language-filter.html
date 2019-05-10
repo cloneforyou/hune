@@ -4,7 +4,7 @@
 
         {{ $pagePermalink := .Page.Permalink }}
         {{ range .Site.Taxonomies.language }}
-        <li> <a href="{{ .Page.Permalink }}" class="{{ if eq $pagePermalink .Page.Permalink }}active{{ end }} header__nav-link">{{ .Page.Title }} </a></li>
+        <li> <a href="{{ .Page.Permalink }}" class="{{ if eq $pagePermalink .Page.Permalink }}active{{ end }} header__nav-link">{{ .Page.Title | humanize}} </a></li>
         {{ end }}
     </nav>
 

@@ -11,17 +11,21 @@
     "rss_url": "https://bitcoinist.com/feed/",
     "language": "crypto"
   },
-  "quan-cam.com": {
-    "rss_url": "http://quan-cam.com/rss",
-    "language": "Vietnamese"
+  "ccn.com": {
+    "rss_url": "https://www.ccn.com/crypto/feed",
+    "language": "crypto"
   }, 
-  "toidicodedao.com": {
-    "rss_url": "https://toidicodedao.com/feed/",
-    "language": "Vietnamese"
+  "coindesk.com": {
+    "rss_url": "https://feeds.feedburner.com/CoinDesk?format=xml",
+    "language": "crypto"
   },
-  "ehkoo.com": {
-    "rss_url": "https://ehkoo.com/rss.xml",
-    "language": "Vietnamese"
+  "cointelegraph.com": {
+    "rss_url": "https://cointelegraph.com/rss",
+    "language": "crypto"
+  },
+  "themerkle.com": {
+    "rss_url": "https://themerkle.com/feed/",
+    "language": "crypto"
   },
   "alligator.io": {
     "rss_url": "https://alligator.io/feed.xml",
