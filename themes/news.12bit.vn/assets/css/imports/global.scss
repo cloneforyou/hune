@@ -4,10 +4,6 @@ body {
   font-size: 100%;
   font-family: helvetica, arial;
 }
-html, body {
-  height: 100%;
-  margin: 0px;
-}
 a {
   text-decoration: none;
 }
@@ -16,6 +12,7 @@ a {
   max-width: 900px;
   margin: 0 auto;
   padding: 10px;
+  margin-bottom: 30px;
   
 }
 .links a {
