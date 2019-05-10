@@ -4,41 +4,19 @@ body {
   font-size: 100%;
   font-family: helvetica, arial;
 }
+html, body {
+  height: 100%;
+  margin: 0px;
+}
 a {
   text-decoration: none;
-}
-// Mixin
-@mixin scrolling-shadows($background-color: rgb(255, 255, 255), $shadow-intensity: 0.2, $shadow-color: rgb(0,0,0), $cover-size: 40px, $shadow-size: 14px) {
-
-	background:
-		// Shadow covers 
-		linear-gradient($background-color 30%, rgba($background-color,0)),
-		linear-gradient(rgba($background-color,0), $background-color 70%) 0 100%,
-
-		// Shadows 
-		radial-gradient(50% 0, farthest-side, rgba($shadow-color,$shadow-intensity), rgba($shadow-color,0)),
-		radial-gradient(50% 100%,farthest-side, rgba($shadow-color,$shadow-intensity), rgba($shadow-color,0)) 0 100%;
-	background:
-		// Shadow covers 
-		linear-gradient($background-color 30%, rgba($background-color,0)),
-		linear-gradient(rgba($background-color,0), $background-color 70%) 0 100%,
-
-		// Shadows 
-		radial-gradient(farthest-side at 50% 0, rgba($shadow-color,$shadow-intensity), rgba($shadow-color,0)),
-		radial-gradient(farthest-side at 50% 100%, rgba($shadow-color,$shadow-intensity), rgba($shadow-color,0)) 0 100%;
-	background-repeat: no-repeat;
-	background-color: $background-color;
-	background-size: 100% $cover-size, 100% $cover-size, 100% $shadow-size, 100% $shadow-size;
-
-	// Opera doesn't support this in the shorthand 
-	background-attachment: local, local, scroll, scroll;
 }
 
 .links {
   max-width: 900px;
   margin: 0 auto;
   padding: 10px;
-  @include scrolling-shadows;
+  
 }
 .links a {
   color: #5e81fe
@@ -129,7 +107,7 @@ button {
     height: rem-calc($header__logo-size);
     margin-top: rem-calc(26px-18px);
     background-color: #5E81FE;
-    border-radius: 50%;
+    border-radius: 50%; z-index: 999999;
   }
   &__nav {
     margin-top: rem-calc(32px-18px);
@@ -161,7 +139,23 @@ button {
 .header__button {
   display: none;
 }
+.huhu {
+  /* height: 100%; */
+  display: block;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  margin-top: 0;
+  padding-top: 100px;
+  /* height: auto; */
+  /* border: 0; */
+  /* height: 100vh; */
+  min-height: 100vh;
+  position: fixed;
+  width: 57vh;  
+}
 @media only screen and (min-width: rem-calc(768px)) {
+ 
   .header__nav--main,
   .header__button {
     display: block;
@@ -170,6 +164,7 @@ button {
   #hamburger {
     display: none;
   }
+
 }
 // --- Hamburger - Menu Toggle --- //
 #hamburger span,

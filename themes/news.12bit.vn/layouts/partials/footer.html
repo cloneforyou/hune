@@ -22,11 +22,15 @@
   function menuToggle() {
     $('#menu-toggle').toggleClass('open');
     $('#nav-mobile').toggleClass('d-none');
-    $('body').toggleClass('no-scroll'); 
+    // $('body').toggleClass('no-scroll'); 
+    $('.header__nav--main').toggle( );
+     $('.header__nav--main').toggleClass('huhu' );
+   
 }
 
 $('#menu-toggle, #nav-mobile').click(function () {
     menuToggle();
+ 
 });
 
   </script>
