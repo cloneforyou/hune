@@ -48,6 +48,10 @@
     "rss_url": "http://feeds.feedburner.com/CssTricks?fmt=xml",
     "topic": "Webdev"
   },
+  "news.ycombinator.com": {
+    "rss_url": "https://morss.it/https://news.ycombinator.com/rss",
+    "topic": "Hacker News"
+  },
 
   "medium.com/google-developers": {
     "rss_url": "https://medium.com/feed/google-developers",
