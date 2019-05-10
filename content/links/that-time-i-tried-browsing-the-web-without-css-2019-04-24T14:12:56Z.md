@@ -2,9 +2,9 @@
 title: "That Time I Tried Browsing the Web Without CSS"
 date: 2019-04-24T14:12:56Z
 link: https://css-tricks.com/that-time-i-tried-browsing-the-web-without-css/
-site: css-tricks.com
-topic: dev
-category:
+source: css-tricks.com
+topic: Webdev
+tags:
   - Article
   - accessibility
   - audit

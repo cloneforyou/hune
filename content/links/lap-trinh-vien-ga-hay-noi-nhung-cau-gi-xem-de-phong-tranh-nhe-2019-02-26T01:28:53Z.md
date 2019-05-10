@@ -2,9 +2,9 @@
 title: "Lập trình viên “gà” hay nói những câu gì? Xem để phòng tránh nhé!"
 date: 2019-02-26T01:28:53Z
 link: https://toidicodedao.com/2019/02/26/lap-trinh-vien-ga-hay-noi-nhung-cau-gi/
-site: toidicodedao.com
+source: toidicodedao.com
 language: Vietnamese
-category:
+tags:
   - Chuyện coding
   - Chuyện linh tinh
   - công nghệ

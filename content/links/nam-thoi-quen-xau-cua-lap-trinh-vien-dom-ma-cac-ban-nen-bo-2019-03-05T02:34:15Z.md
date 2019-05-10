@@ -2,9 +2,9 @@
 title: "Năm thói quen xấu của lập trình viên “dỏm” mà các bạn nên bỏ"
 date: 2019-03-05T02:34:15Z
 link: https://toidicodedao.com/2019/03/05/thoi-quen-xau-lap-trinh-vien-nen-bo/
-site: toidicodedao.com
+source: toidicodedao.com
 language: Vietnamese
-category:
+tags:
   - Chuyện coding
   - Chuyện nghề nghiệp
   - công nghệ

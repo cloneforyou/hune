@@ -1,7 +1,9 @@
 {{ partial "header" . }}
 <!-- {{ partial "language-filter" . }} -->
 <main>
+         
         <div class="links">
+                       
                 {{ $paginator := .Paginate (where .Pages "Type" "links") }}
                 {{ range $paginator.Pages }}
                 {{ partial "link" . }}

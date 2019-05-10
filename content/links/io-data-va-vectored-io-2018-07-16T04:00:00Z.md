@@ -2,9 +2,9 @@
 title: "IO data và Vectored IO"
 date: 2018-07-16T04:00:00Z
 link: https://quan-cam.com/posts/iodata-va-vectored-io
-site: quan-cam.com
+source: quan-cam.com
 language: Vietnamese
-category:
+tags:
   - elixir
   - erlang
   - programming

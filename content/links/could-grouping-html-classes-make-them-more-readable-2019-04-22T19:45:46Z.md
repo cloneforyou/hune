@@ -2,9 +2,9 @@
 title: "Could Grouping HTML Classes Make Them More Readable?"
 date: 2019-04-22T19:45:46Z
 link: https://css-tricks.com/could-grouping-html-classes-make-them-more-readable/
-site: css-tricks.com
-topic: dev
-category:
+source: css-tricks.com
+topic: Webdev
+tags:
   - Article
   - classes
   - HTML

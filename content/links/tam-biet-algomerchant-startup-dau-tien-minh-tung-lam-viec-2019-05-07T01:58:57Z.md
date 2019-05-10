@@ -2,9 +2,9 @@
 title: "Tạm biệt Algomerchant – Startup đầu tiên mình từng làm việc"
 date: 2019-05-07T01:58:57Z
 link: https://toidicodedao.com/2019/05/07/tam-biet-algomerchant-startup-dau-tien/?utm_medium=RSS&utm_source=news.12bit.vn
-site: toidicodedao.com
+source: toidicodedao.com
 language: Vietnamese
-category:
+tags:
   - Chuyện linh tinh
   - Chuyện nghề nghiệp
   - algomerchant

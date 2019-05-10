@@ -1,80 +1,73 @@
 {
-  "reddit.com": {
-    "rss_url": "https://www.reddit.com/r/UpliftingNews.rss",
-    "language": "news"
-  },
+
   "bitcoinmagazine.com": {
     "rss_url": "https://bitcoinmagazine.com/feed",
-    "language": "crypto"
+    "topic": "crypto"
   },
   "news.bitcoin.com": {
     "rss_url": "https://news.bitcoin.com/feed/",
-    "language": "crypto"
+    "topic": "crypto"
   },
   "bitcoinist.com": {
     "rss_url": "https://bitcoinist.com/feed/",
-    "language": "crypto"
+    "topic": "crypto"
   },
   "ccn.com": {
     "rss_url": "https://www.ccn.com/crypto/feed",
-    "language": "crypto"
+    "topic": "crypto"
   }, 
   "coindesk.com": {
     "rss_url": "https://feeds.feedburner.com/CoinDesk?format=xml",
-    "language": "crypto"
+    "topic": "crypto"
   },
   "cointelegraph.com": {
     "rss_url": "https://cointelegraph.com/rss",
-    "language": "crypto"
+    "topic": "crypto"
   },
   "themerkle.com": {
     "rss_url": "https://themerkle.com/feed/", 
-    "language": "crypto"
+    "topic": "crypto"
   },
   "alligator.io": {
     "rss_url": "https://alligator.io/feed.xml",
-    "language": "English"
+    "topic": "English"
   },
   "www.smashingmagazine.com": {
     "rss_url": "https://www.smashingmagazine.com/feed/",
-    "language": "English"
-  },
-  "huydx.com": {
-    "rss_url": "https://huydx.com/rss",
-    "language": "Vietnamese"
+    "topic": "English"
   },
   "hackernoon.com": {
     "rss_url": "https://hackernoon.com/feed",
-    "language": "English"
+    "topic": "English"
   },
   "medium.freecodecamp.org": {
     "rss_url": "https://medium.freecodecamp.org/feed",
-    "language": "English"
+    "topic": "English"
   },
   "css-tricks.com": {
     "rss_url": "http://feeds.feedburner.com/CssTricks?fmt=xml",
-    "language": "English"
+    "topic": "English"
   },
 
   "medium.com/google-developers": {
     "rss_url": "https://medium.com/feed/google-developers",
-    "language": "English"
+    "topic": "English"
   },
   "designmodo.com": {
     "rss_url": "http://feeds.feedburner.com/designmodo?format=xml",
-    "language": "English"
+    "topic": "English"
   },
   "blog.chromium.org": {
     "rss_url": "https://blog.chromium.org/feeds/posts/default?alt=rss",
-    "language": "English"
+    "topic": "English"
   },
   "reddit.com": {
     "rss_url": "https://www.reddit.com/r/all.rss",
-    "language": "English"
+    "topic": "English"
   },
   "scotch.io": {
     "rss_url": "https://scotch.io/feed",
-    "language": "English"
+    "topic": "English"
   }
 }
  

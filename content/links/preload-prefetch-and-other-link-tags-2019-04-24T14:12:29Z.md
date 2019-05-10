@@ -2,9 +2,9 @@
 title: "Preload, prefetch and other link tags"
 date: 2019-04-24T14:12:29Z
 link: https://3perf.com/blog/link-rels/
-site: css-tricks.com
-topic: dev
-category:
+source: css-tricks.com
+topic: Webdev
+tags:
   - Link
   - performance
   - prebrowse
