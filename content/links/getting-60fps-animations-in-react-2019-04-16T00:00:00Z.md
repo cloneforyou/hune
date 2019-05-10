@@ -3,6 +3,6 @@ title: "Getting 60fps Animations in React"
 date: 2019-04-16T00:00:00Z
 link: https://alligator.io/react/getting-60fps-animations-in-react/
 source: alligator.io
-topic: Webdev
+language: Webdev
 draft: false
 ---

@@ -3,7 +3,7 @@ title: "How I developed a C.N.N. that recognizes emotions and broke into the Kag
 date: 2018-10-01T12:21:33Z
 link: https://medium.freecodecamp.org/facial-emotion-recognition-develop-a-c-n-n-and-break-into-kaggle-top-10-f618c024faa7?source=rss----336d898217ee---4
 source: medium.freecodecamp.org
-topic: Webdev
+language: Webdev
 tags:
   - machine-learning
   - artificial-intelligence

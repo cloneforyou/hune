@@ -3,7 +3,7 @@ title: "The Product Signals of Distributed Computing"
 date: 2019-03-03T21:29:18Z
 link: https://hackernoon.com/designing-for-distributed-computing-be5d4c1ab2a1?source=rss----3a8144eabfe3---4
 source: hackernoon.com
-topic: Webdev
+language: Webdev
 tags:
   - blockchain
   - hackernoon-top-story

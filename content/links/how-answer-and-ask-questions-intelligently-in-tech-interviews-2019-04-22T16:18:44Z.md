@@ -3,7 +3,7 @@ title: "How answer — and ask — questions intelligently in tech inter
 date: 2019-04-22T16:18:44Z
 link: https://medium.freecodecamp.org/how-answer-and-ask-questions-intelligently-in-tech-interviews-a3ea69b9aa95?source=rss----336d898217ee---4
 source: medium.freecodecamp.org
-topic: Webdev
+language: Webdev
 tags:
   - interview
   - jobs
