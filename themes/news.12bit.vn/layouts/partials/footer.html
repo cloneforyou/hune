@@ -13,16 +13,12 @@
       container: ".links",
       item: ".link-list__link",
       pagination: ".load-more",
-      next: ".more"
+      next: ".more a"
     });
 
     ias.extension(new IASNoneLeftExtension({text: '&#8226;'}));
-
-    ias.extension(new IASSpinnerExtension({
-    src: '/img/spinner.gif', // optionally
-}));
+    ias.extension(new IASSpinnerExtension({ src: '/img/spinner.gif', }));
   
-
   function menuToggle() {
     $('#menu-toggle').toggleClass('open');
     $('#nav-mobile').toggleClass('d-none');

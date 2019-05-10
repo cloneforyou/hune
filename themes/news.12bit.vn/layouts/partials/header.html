@@ -12,7 +12,7 @@
   {{ if isset .Site.Params "favicon" }}
   <link rel="icon" href="{{ .Site.Params.favicon | absURL }}" />
   {{ end }}
-  <link href="https://fonts.googleapis.com/css?family=Quicksand:700" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Quicksand:700" rel="stylesheet"> -->
   {{ $post := resources.Get "css/main.scss" }}
   {{ $style :=  $post | resources.ToCSS | minify }}
   <link href="{{ $style.RelPermalink }}" rel="stylesheet" type="text/css" />
