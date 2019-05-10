@@ -49,7 +49,7 @@
     "topic": "Webdev"
   },
   "news.ycombinator.com": {
-    "rss_url": "https://hnrss.org/frontpage",
+    "rss_url": "https://hnrss.org/newest?points=100",
     "topic": "Hacker News"
   },
 
@@ -70,10 +70,7 @@
     "rss_url": "https://blog.chromium.org/feeds/posts/default?alt=rss",
     "topic": "Webdev"
   },
-  "reddit.com": {
-    "rss_url": "https://www.reddit.com/r/all.rss",
-    "topic": "Webdev"
-  },
+ 
   "scotch.io": {
     "rss_url": "https://scotch.io/feed",
     "topic": "Webdev"
