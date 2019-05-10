@@ -3,7 +3,7 @@
         <!-- <li> <a href="/" class="{{ if (.Page.IsHome) }}active{{ end }} header__nav-link">All</a></li> -->
 
         {{ $pagePermalink := .Page.Permalink }}
-        {{ range .Site.Taxonomies.language }}
+        {{ range .Site.Taxonomies.topic }}
         <li> <a href="{{ .Page.Permalink }}" class="{{ if eq $pagePermalink .Page.Permalink }}active{{ end }} header__nav-link">{{ .Page.Title | humanize}} </a></li>
         {{ end }}
     </nav>

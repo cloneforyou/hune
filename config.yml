@@ -32,6 +32,6 @@ menu:
     title: Thêm links
     url: /pages/about.html
 taxonomies:
-  language: language
+  topic: topic
   site: site
   # tags: tags
