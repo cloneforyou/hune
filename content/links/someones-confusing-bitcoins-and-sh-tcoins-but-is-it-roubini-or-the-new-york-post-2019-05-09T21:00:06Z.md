@@ -3,7 +3,7 @@ title: "Someone’s Confusing Bitcoins and Sh*tcoins, But Is It Roubini Or The N
 date: 2019-05-09T21:00:06Z
 link: https://bitcoinist.com/somebodys-been-confusing-bitcoin-and-shtcoins-but-is-it-roubini-or-the-new-york-post/?utm_medium=RSS&utm_source=news.12bit.vn
 site: bitcoinist.com
-language: crypto
+topic: crypto
 category:
   - Bitcoin
   - News

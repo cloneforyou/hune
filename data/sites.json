@@ -1,4 +1,8 @@
 {
+  "reddit.com": {
+    "rss_url": "https://www.reddit.com/r/UpliftingNews.rss",
+    "language": "news"
+  },
   "bitcoinmagazine.com": {
     "rss_url": "https://bitcoinmagazine.com/feed",
     "language": "crypto"
