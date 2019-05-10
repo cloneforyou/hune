@@ -13,6 +13,10 @@ outputs:
   home:
   - HTML
   - RSS
+  section:
+    - HTML
+    - RSS
+ 
 disableKinds:
   - taxonomyTerm
 params:
