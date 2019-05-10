@@ -1,28 +1,28 @@
 {
-  // "12bit.vn": {
-  //   "rss_url": "https://12bit.vn/articles/index.xml",
-  //   "language": "Vietnamese"
-  // },
-  // "thefullsnack.com": {
-  //   "rss_url": "https:///thefullsnack.com/rss.xml",
-  //   "language": "Vietnamese"
-  // },
-  // "completejavascript.com": {
-  //   "rss_url": "https://completejavascript.com/feed/",
-  //   "language": "Vietnamese"
-  // },
-  // "quan-cam.com": {
-  //   "rss_url": "http://quan-cam.com/rss",
-  //   "language": "Vietnamese"
-  // },
-  // "toidicodedao.com": {
-  //   "rss_url": "https://toidicodedao.com/feed/",
-  //   "language": "Vietnamese"
-  // },
-  // "ehkoo.com": {
-  //   "rss_url": "https://ehkoo.com/rss.xml",
-  //   "language": "Vietnamese"
-  // },
+  "12bit.vn": {
+    "rss_url": "https://12bit.vn/articles/index.xml",
+    "language": "Vietnamese"
+  },
+  "thefullsnack.com": {
+    "rss_url": "https:///thefullsnack.com/rss.xml",
+    "language": "Vietnamese"
+  },
+  "completejavascript.com": {
+    "rss_url": "https://completejavascript.com/feed/",
+    "language": "Vietnamese"
+  },
+  "quan-cam.com": {
+    "rss_url": "http://quan-cam.com/rss",
+    "language": "Vietnamese"
+  },
+  "toidicodedao.com": {
+    "rss_url": "https://toidicodedao.com/feed/",
+    "language": "Vietnamese"
+  },
+  "ehkoo.com": {
+    "rss_url": "https://ehkoo.com/rss.xml",
+    "language": "Vietnamese"
+  },
   "alligator.io": {
     "rss_url": "https://alligator.io/feed.xml",
     "language": "English"
