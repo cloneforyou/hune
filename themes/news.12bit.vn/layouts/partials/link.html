@@ -8,13 +8,13 @@
     <span class="link-list__link__meta">   <abbr class="timeago" title="{{ .Date.Format "2006-01-02 15:04" }}"> </abbr>&#8226;
       <a href="/site/{{ .Params.site }}"
         rel="nofollow noopener">{{ .Params.site | replaceRE "^www.([^/]+).*" "$1" }}</a>
-        {{- if .Params.tags -}} 
+        <!-- {{- if .Params.tags -}} 
         {{- range $key, $tag := .Params.tags }} 
             {{- if ne $key 0 }} {{ end }} <span>,<a href='/tags/{{ $tag | urlize }}'>{{ $tag | humanize}}</a></span>
         {{- end -}}
     {{- else -}}
         
-    {{- end -}}
+    {{- end -}} -->
  
     </span>
   </span>
