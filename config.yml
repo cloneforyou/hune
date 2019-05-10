@@ -34,4 +34,4 @@ menu:
 taxonomies:
   language: language
   site: site
-  tags: tags
+  # tags: tags
