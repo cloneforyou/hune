@@ -30,44 +30,44 @@
   },
   "alligator.io": {
     "rss_url": "https://alligator.io/feed.xml",
-    "topic": "English"
+    "topic": "Webdev"
   },
   "www.smashingmagazine.com": {
     "rss_url": "https://www.smashingmagazine.com/feed/",
-    "topic": "English"
+    "topic": "Webdev"
   },
   "hackernoon.com": {
     "rss_url": "https://hackernoon.com/feed",
-    "topic": "English"
+    "topic": "Webdev"
   },
   "medium.freecodecamp.org": {
     "rss_url": "https://medium.freecodecamp.org/feed",
-    "topic": "English"
+    "topic": "Webdev"
   },
   "css-tricks.com": {
     "rss_url": "http://feeds.feedburner.com/CssTricks?fmt=xml",
-    "topic": "English"
+    "topic": "Webdev"
   },
 
   "medium.com/google-developers": {
     "rss_url": "https://medium.com/feed/google-developers",
-    "topic": "English"
+    "topic": "Webdev"
   },
   "designmodo.com": {
     "rss_url": "http://feeds.feedburner.com/designmodo?format=xml",
-    "topic": "English"
+    "topic": "Webdev"
   },
   "blog.chromium.org": {
     "rss_url": "https://blog.chromium.org/feeds/posts/default?alt=rss",
-    "topic": "English"
+    "topic": "Webdev"
   },
   "reddit.com": {
     "rss_url": "https://www.reddit.com/r/all.rss",
-    "topic": "English"
+    "topic": "Webdev"
   },
   "scotch.io": {
     "rss_url": "https://scotch.io/feed",
-    "topic": "English"
+    "topic": "Webdev"
   }
 }
  
