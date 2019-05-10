@@ -2,7 +2,7 @@
 title: "Cùng học Cờ Lao – Azure Phần 3: Cùng deploy ứng dụng Web trên máy ảo Azure Cloud"
 date: 2019-03-19T01:32:39Z
 link: https://toidicodedao.com/2019/03/19/deploy-ung-dung-web-tren-may-ao-azure/
-source: toidicodedao.com
+site: toidicodedao.com
 language: Vietnamese
 tags:
   - Chuyện coding

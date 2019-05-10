@@ -2,7 +2,7 @@
 title: "Easily Turn Your Photos into Vectors with Photo Vectorizer"
 date: 2019-05-02T14:39:00Z
 link: https://synd.co/2ISy7YW
-source: css-tricks.com
+site: css-tricks.com
 language: Webdev
 tags:
   - Link

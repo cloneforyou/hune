@@ -2,7 +2,7 @@
 title: "14 Ways to Upgrade and Modernize Your Nonprofit"
 date: 2019-05-04T10:16:00Z
 link: https://hackernoon.com/14-ways-to-upgrade-and-modernize-your-nonprofit-9c211ab0b975?source=rss----3a8144eabfe3---4
-source: hackernoon.com
+site: hackernoon.com
 language: Webdev
 tags:
   - tech-nonprofit

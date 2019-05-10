@@ -2,7 +2,7 @@
 title: "Những plugins không thể thiếu cho VSCode"
 date: 2018-05-20T00:00:00Z
 link: https://ehkoo.com/bai-viet/vscode-must-have-plugins
-source: ehkoo.com
+site: ehkoo.com
 language: Vietnamese
 draft: false
 ---

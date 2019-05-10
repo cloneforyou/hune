@@ -2,7 +2,7 @@
 title: "Angular: Performance Analysis with webpack Bundle Analyzer"
 date: 2019-04-12T00:00:00Z
 link: https://alligator.io/angular/angular-webpack-bundle-analyzer/
-source: alligator.io
+site: alligator.io
 language: Webdev
 draft: false
 ---

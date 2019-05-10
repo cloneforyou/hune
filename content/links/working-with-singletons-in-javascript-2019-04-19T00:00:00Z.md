@@ -2,7 +2,7 @@
 title: "Working with Singletons in JavaScript"
 date: 2019-04-19T00:00:00Z
 link: https://alligator.io/js/js-singletons/
-source: alligator.io
+site: alligator.io
 language: Webdev
 draft: false
 ---

@@ -2,7 +2,7 @@
 title: "Command-line Basics: Finding Files and Directories"
 date: 2019-04-21T00:00:00Z
 link: https://alligator.io/workflow/command-line-basics-finding-files-and-directories/
-source: alligator.io
+site: alligator.io
 language: Webdev
 draft: false
 ---

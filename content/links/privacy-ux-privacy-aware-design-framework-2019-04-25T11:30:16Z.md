@@ -2,7 +2,7 @@
 title: "Privacy UX: Privacy-Aware Design Framework"
 date: 2019-04-25T11:30:16Z
 link: https://www.smashingmagazine.com/2019/04/privacy-ux-aware-design-framework/
-source: www.smashingmagazine.com
+site: www.smashingmagazine.com
 language: Webdev
 draft: false
 ---

@@ -2,7 +2,7 @@
 title: "Venezuelans Fight Internet Blocking with Privacy Services like Startpage.com and DuckDuckGo"
 date: 2019-05-03T00:24:15Z
 link: https://hackernoon.com/venezuelans-fight-internet-blocking-with-privacy-services-like-startpage-com-and-duckduckgo-1229b5d9c92?source=rss----3a8144eabfe3---4
-source: hackernoon.com
+site: hackernoon.com
 language: Webdev
 tags:
   - privacy

@@ -2,7 +2,7 @@
 title: "4 Interesting Cases of Software Failures and Consequences"
 date: 2018-09-17T05:05:54Z
 link: https://blog.bitsrc.io/software-is-not-perfect-cases-of-software-failure-and-their-consequences-f5fec39c038f?source=rss----5c2fdf847f4a---4
-source: blog.bitsrc.io
+site: blog.bitsrc.io
 language: Webdev
 tags:
   - software-development

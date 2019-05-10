@@ -2,7 +2,7 @@
 title: "OneCoin Officially Sued For Scamming ‘Thousands Upon Thousands’ in the US"
 date: 2019-05-09T13:00:04Z
 link: https://bitcoinist.com/onecoin-us-lawsuit-ponzi-scheme/?utm_medium=RSS&utm_source=news.12bit.vn
-source: bitcoinist.com
+site: bitcoinist.com
 language: crypto
 tags:
   - Altcoin News

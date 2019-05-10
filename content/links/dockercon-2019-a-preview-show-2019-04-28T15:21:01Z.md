@@ -2,7 +2,7 @@
 title: "DockerCon 2019 — A Preview Show"
 date: 2019-04-28T15:21:01Z
 link: https://hackernoon.com/dockercon-2019-a-preview-show-3f0355cdd566?source=rss----3a8144eabfe3---4
-source: hackernoon.com
+site: hackernoon.com
 language: Webdev
 tags:
   - amazon-web-services
