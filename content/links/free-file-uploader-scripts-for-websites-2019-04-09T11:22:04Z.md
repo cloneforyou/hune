@@ -2,9 +2,9 @@
 title: "Free File Uploader Scripts for Websites"
 date: 2019-04-09T11:22:04Z
 link: http://feedproxy.google.com/~r/designmodo/~3/zTgKA4yzUiY/?utm_medium=RSS&utm_source=news.12bit.vn
-site: designmodo.com
+source: designmodo.com
 language: Web dev
-category:
+tags:
   - Scripts
   - HTML
   - JavaScript
