@@ -1,7 +1,7 @@
 [build]
 publish = "public"
-# command = "yarn build && hugo --gc --minify"
-command = "hugo --gc --minify"
+command = "yarn build && hugo --gc --minify"
+
 
 [context.production.environment]
 HUGO_VERSION = "0.55.5"
