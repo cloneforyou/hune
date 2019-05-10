@@ -29,3 +29,25 @@ HUGO_VERSION = "0.55.5"
 
 [context.next.environment]
 HUGO_ENABLEGITINFO = "true"
+
+# A redirect rule with all the supported properties
+[[redirects]]
+  from = "/site"
+  to = "/"
+  [[redirects]]
+  from = "/topic"
+  to = "/"
+
+
+    [[headers]]
+	# For all requests
+	for = "/*"
+[headers.values]
+	# Security headers
+	X-Frame-Options = "DENY"
+	X-XSS-Protection = "1; mode=block"
+	X-Content-Type-Options = "nosniff"
+	# For HSTS
+	Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+
+	Link = "</css/main.min.css>; rel=preload; as=stylesheet,</js/jquery-ias.min.js>; rel=preload; as=script,</img/spinner.gif>; rel=preload; as=image"
