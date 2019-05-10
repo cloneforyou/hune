@@ -3,7 +3,7 @@ title: "PR: ACD Launches Coin Buy Back Project"
 date: 2019-05-10T09:30:00Z
 link: https://news.bitcoin.com/pr-acd-launches-coin-buy-back-project/?utm_medium=RSS&utm_source=hune
 site: news.bitcoin.com
-topic: json:"topic"
+topic: crypto
 category:
   - Press release
   - ACD

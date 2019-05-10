@@ -3,7 +3,7 @@ title: "Billionaire Binance CEO Apologizes for Bitcoin Blockchain ‘Reorg’, a
 date: 2019-05-10T13:36:55Z
 link: https://www.ccn.com/billionaire-binance-ceo-apologizes-for-bitcoin-blockchain-reorg-a-dirty-word?utm_medium=RSS&utm_source=hune
 site: www.ccn.com
-topic: json:"topic"
+topic: crypto
 category:
   - Crypto
   - Exchanges

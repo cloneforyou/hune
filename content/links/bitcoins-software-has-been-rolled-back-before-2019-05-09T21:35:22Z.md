@@ -3,7 +3,7 @@ title: "Bitcoin’s Software Has Been Rolled Back Before"
 date: 2019-05-09T21:35:22Z
 link: https://news.bitcoin.com/bitcoins-software-has-been-rolled-back-before/?utm_medium=RSS&utm_source=hune
 site: news.bitcoin.com
-topic: json:"topic"
+topic: crypto
 category:
   - Technology
   - 2013
