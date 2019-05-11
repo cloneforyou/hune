@@ -1,0 +1,4 @@
+     //   "date": "{{ $page.Params.date }}",
+
+        //   {{- if .Params.category -}} "category": "{{- range $key, $tag := .Params.category }} {{- if ne $key 0 }} {{ end }} {{ $tag | humanize}}, {{- end -}}{{- end -}}"
+ 
