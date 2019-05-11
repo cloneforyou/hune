@@ -28,14 +28,6 @@
     "rss_url": "https://themerkle.com/feed/", 
     "topic": "crypto"
   },
-  "alligator.io": {
-    "rss_url": "https://alligator.io/feed.xml",
-    "topic": "Webdev"
-  },
-  "www.smashingmagazine.com": {
-    "rss_url": "https://www.smashingmagazine.com/feed/",
-    "topic": "Webdev"
-  },
   "hackernoon.com": {
     "rss_url": "https://hackernoon.com/feed",
     "topic": "Webdev"
@@ -49,10 +41,6 @@
     "topic": "Webdev"
   },
   
-  "css-tricks.com": {
-    "rss_url": "http://feeds.feedburner.com/CssTricks?fmt=xml",
-    "topic": "Webdev"
-  },
   "news.ycombinator.com": {
     "rss_url": "https://hnrss.org/frontpage?points=100",
     "topic": "Hacker News"
@@ -83,7 +71,7 @@
     "rss_url": "https://webplatform.news/feed.xml",
     "topic": "Webdev"
   },
-  "webplatform.news": {
+  "github.com": {
     "rss_url": "https://mshibanami.github.io/GitHubTrendingRSS/weekly/all.xml",
     "topic": "Webdev"
   },
