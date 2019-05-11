@@ -24,6 +24,8 @@
     $('#nav-mobile').toggleClass('d-none');
     // $('body').toggleClass('no-scroll'); 
     $('.header__nav--main').toggle( );
+    $('.jsless-switchery').toggle( );
+    // $(".header__logo").parent().css({position: 'absolute'});
      $('.header__nav--main').toggleClass('huhu' );
    
 }
@@ -42,6 +44,39 @@ $(window).scroll(function() {
         $(".header").removeClass("sha");
     }
 });
+function darkmode(){
+    $('body').addClass('dark-mode');
+    localStorage.setItem("mode", "dark");
+    $( "#switch" ).prop( "checked", true );
+    }
+
+
+
+function nodark(){
+        $('body').removeClass('dark-mode');
+        localStorage.setItem("mode", "light");
+        }
+
+  if(localStorage.getItem("mode")=="dark")
+        darkmode();
+
+  else
+    nodark();
+
+$('#switch').change(function(){   
+
+    if ($(this).prop('checked'))
+    {
+        darkmode();
+    }
+    else
+    {
+        nodark();
+    }
+
+});
+
+ 
   </script>
   <script>function htmlEntities(e){return String(e).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;")}var date=new Date,DateString=date.toDateString(),ISOString=date.toISOString(),timestamp=date.getTime()/100>>0,temps=['<abbr class="timeago" title="'+DateString+'">'+DateString+"</abbr>",'<abbr class="timeago" title="'+ISOString+'">'+ISOString+"</abbr>",'<time class="timeago" datetime="'+ISOString+'">'+ISOString+"</time>",'<span class="timeago" title="'+timestamp+'">'+timestamp+"</span>"],elements=document.getElementsByClassName("usage"),j=0;for(var i in elements){var $this=elements[i];"object"==typeof $this&&(console.log(temps[j]),$this.innerHTML=temps[j]+"<code>"+htmlEntities(temps[j++])+"</code>")}(function e(t){var a={prefix:"",suffix:" ago",seconds:"1 minute",minute:"1 minute",minutes:"%d minutes",hour:"1 hour",hours:"%d hours",day:"1 day",days:"%d days",month:"1 month",months:"%d months",year:"1 year",years:"%d years"},i=function(e,t){return a[e]&&a[e].replace(/%d/i,Math.abs(Math.round(t)))},r=function(e){if(e){e=e.replace(/\.\d+/,""),e=e.replace(/-/,"/").replace(/-/,"/"),e=e.replace(/T/," ").replace(/Z/," UTC"),e=e.replace(/([\+\-]\d\d)\:?(\d\d)/," $1$2"),e=new Date(1e3*e||e);var t=new Date,r=.001*(t.getTime()-e)>>0,n=r/60,s=n/60,m=s/24,o=m/365;return a.prefix+(r<45&&i("seconds",r)||r<90&&i("minute",1)||n<45&&i("minutes",n)||n<90&&i("hour",1)||s<24&&i("hours",s)||s<42&&i("day",1)||m<30&&i("days",m)||m<45&&i("month",1)||m<365&&i("months",m/30)||o<1.5&&i("year",1)||i("years",o))+a.suffix}},n=document.getElementsByClassName("timeago");for(var s in n){var m=n[s];"object"==typeof m&&(m.innerHTML=r(m.getAttribute("title")||m.getAttribute("datetime")))}setTimeout(e,1)})();</script>
 
