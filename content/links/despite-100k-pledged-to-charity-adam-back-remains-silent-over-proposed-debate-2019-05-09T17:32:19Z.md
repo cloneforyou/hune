@@ -2,7 +2,7 @@
 title: "Despite $100K Pledged to Charity, Adam Back Remains Silent Over Proposed Debate"
 date: 2019-05-09T17:32:19Z
 link: https://news.bitcoin.com/despite-100k-pledged-to-charity-adam-back-remains-silent-over-proposed-debate/?utm_medium=RSS&utm_source=hune
-site: news.bitcoin.com%!s(MISSING)
+site: news.bitcoin.com
 topic: crypto
 category:
   - News

@@ -2,7 +2,7 @@
 title: "How to Create a Good Transactional Email that Converts"
 date: 2019-04-02T08:31:39Z
 link: http://feedproxy.google.com/~r/designmodo/~3/fkUAxv34o1I/?utm_medium=RSS&utm_source=hune
-site: feedproxy.google.com%!s(MISSING)
+site: feedproxy.google.com
 topic: Webdev
 category:
   - Design
