@@ -1,5 +1,9 @@
 {
-
+  
+  "reddit.com": {
+    "rss_url": "https://zapier.com/engine/rss/4967870/CryptoCurrency/",
+    "topic": "crypto"
+  },
   "bitcoinmagazine.com": {
     "rss_url": "https://bitcoinmagazine.com/feed",
     "topic": "crypto"

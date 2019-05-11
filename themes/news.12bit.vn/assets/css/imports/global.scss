@@ -18,6 +18,7 @@ a {
 .links a {
   color: #5e81fe
 }
+.links a:active { color: snow;background: none;}
 .link-list__link {
   color: #333;
   display: block;
