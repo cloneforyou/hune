@@ -44,6 +44,11 @@
     "rss_url": "https://medium.freecodecamp.org/feed",
     "topic": "Webdev"
   },
+  "medium.com": {
+    "rss_url": "https://medium.com/feed/tag/jamstack",
+    "topic": "Webdev"
+  },
+  
   "css-tricks.com": {
     "rss_url": "http://feeds.feedburner.com/CssTricks?fmt=xml",
     "topic": "Webdev"
