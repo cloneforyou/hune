@@ -1,5 +1,5 @@
 {{ partial "header" . }}
-<!-- {{ partial "language-filter" . }} -->
+<!-- {{ partial "topic-filter" . }} -->
 <main>
   <div class="links">
     {{ $paginator := .Paginate (where .Pages "Type" "links") }}

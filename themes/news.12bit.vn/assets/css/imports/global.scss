@@ -136,6 +136,7 @@ button {
 .header__button {
   display: none;
 }
+.active {color: #3A79FF;}
 .huhu {
   /* height: 100%; */
   display: block;
@@ -267,6 +268,7 @@ button {
   color: $c-primary;
 }
 
-.scrollUp {
-  transform: translateY(-80px);
+.sha {
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px;
+
 }
