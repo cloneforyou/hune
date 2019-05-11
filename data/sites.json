@@ -74,6 +74,11 @@
   "scotch.io": {
     "rss_url": "https://scotch.io/feed",
     "topic": "Webdev"
+  },
+  "JAMstack_dev": {
+    "rss_url": "https://zapier.com/engine/rss/4967870/hune",
+    "topic": "Webdev"
   }
 }
   
+
