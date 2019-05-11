@@ -12,7 +12,7 @@
         {{- range $key, $tag := .Params.tags }} 
             {{- if ne $key 0 }} {{ end }} <span>,<a href='/tags/{{ $tag | urlize }}'>{{ $tag | humanize}}</a></span>
         {{- end -}}
-    {{- else -}}
+    {{- else -}} 
         
     {{- end -}} -->
  
