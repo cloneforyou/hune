@@ -7,6 +7,7 @@ theme: news.12bit.vn
 enableGitInfo: true
 enableEmoji: true
 enableRobotsTXT: true
+disableHugoGeneratorInject: true
 googleAnalytics: 
 paginate: 40
 outputs:

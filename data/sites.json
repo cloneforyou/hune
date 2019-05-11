@@ -66,11 +66,6 @@
     "rss_url": "https://developers.google.com/web/updates/rss.xml",
     "topic": "Webdev"
   },
- 
-  "designmodo.com": {
-    "rss_url": "http://feeds.feedburner.com/designmodo?format=xml",
-    "topic": "Webdev"
-  },
   "blog.chromium.org": {
     "rss_url": "https://blog.chromium.org/feeds/posts/default?alt=rss",
     "topic": "Webdev"

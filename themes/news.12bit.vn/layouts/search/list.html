@@ -1,0 +1,25 @@
+{{ partial "header" . }}
+<!-- {{ partial "topic-filter" . }} -->
+<main>
+  <div class="links">
+    <div id="tipue_search_content" class="posts"></div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#tipue_search_input").tipuesearch({})
+        })
+    </script>
+    <script src="/js/tipuesearch.min.js"></script>
+    <script src="/js/tipuesearch_set.min.js"></script>    <div class="load-more center">
+      {{ if .Paginator.HasNext }}
+      <a class="more" href="{{ .Paginator.Next.URL }}">More posts</a>
+      <br>
+      {{ end }}
+    </div>
+  </div><!-- end .links -->
+  <div class="jsless-switchery">
+    <input type="checkbox" name="switch" id="switch" />
+    <label for="switch"></label>
+  </div>
+</main><!-- end #content -->
+{{ partial "footer" . }}
