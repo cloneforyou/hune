@@ -9,6 +9,6 @@ tags:
   - programming
   - software-development
   - tech
-  - technology
+  - technology 
 draft: false
 ---
