@@ -4,7 +4,8 @@
         {{ if $index }},{{ end }}
         {
           "url": "{{  $page.Params.link }}",
-          "title": "{{ $page.Params.title }}"
+          "title": "{{ $page.Params.title }}",
+          "site": "{{ $page.Params.site }}"
         }
       {{ end }}
     {{ end }}
