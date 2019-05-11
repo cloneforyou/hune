@@ -83,10 +83,15 @@
     "rss_url": "https://webplatform.news/feed.xml",
     "topic": "Webdev"
   },
-  "github.com": {
-    "rss_url": "http://github-trends.ryotarai.info/rss/github_trends_all_weekly.rss",
+  "webplatform.news": {
+    "rss_url": "https://mshibanami.github.io/GitHubTrendingRSS/weekly/all.xml",
+    "topic": "Webdev"
+  },
+  "changelog.com": {
+    "rss_url": "https://changelog.com/feed",
     "topic": "Webdev"
   }
+
 
 
 }
