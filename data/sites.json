@@ -78,7 +78,12 @@
   "JAMstack_dev": {
     "rss_url": "https://zapier.com/engine/rss/4967870/hune",
     "topic": "Webdev"
+  },
+  "webplatform.news": {
+    "rss_url": "https://webplatform.news/feed.xml",
+    "topic": "Webdev"
   }
+
 }
   
 
