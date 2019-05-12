@@ -32,11 +32,11 @@ params:
 blackfriday:
   hrefTargetBlank: true
   noreferrerLinks: true
-menu:
-  main:
-  - identifier: contribute
-    title: Thêm links
-    url: /pages/about.html
+# menu:
+#   main:
+#   - identifier: contribute
+#     title: Thêm links
+#     url: /pages/about.html
 taxonomies:
   topic: topic
   site: site
