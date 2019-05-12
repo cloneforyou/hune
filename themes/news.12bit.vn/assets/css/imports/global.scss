@@ -345,7 +345,8 @@ position:fixed;
 
 }
 @media (min-width: 10em) and (max-width: 50em) { 
-   .jsless-switchery {display: none;   right: 43%; bottom:30px; z-index: 9999;}
+   .jsless-switchery {display: none;      width: 46%;
+    margin: 0 auto; bottom:30px; }
   .header__logo {position: inherit;}
 ul.header__nav-list { display: block; text-align: center; line-height: 3}
 .huhu { /* display: flex; */
