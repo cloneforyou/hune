@@ -50,4 +50,4 @@ HUGO_ENABLEGITINFO = "true"
 	# For HSTS
 	Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
 
-	Link = "</css/main.min.css>; rel=preload; as=stylesheet,</js/jquery-ias.min.js>; rel=preload; as=script,</img/spinner.gif>; rel=preload; as=image"
+	Link = "</css/main.min.css>; rel=preload; as=stylesheet"
