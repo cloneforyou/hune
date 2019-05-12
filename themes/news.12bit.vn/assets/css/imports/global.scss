@@ -82,7 +82,7 @@ a {
 @function rem-calc($size) {
   @return $size / 16px * 1rem;
 }
-$nav-text-color: #697CA6;
+$nav-text-color: #5E81FE;
 $header__logo-size: 26px;
 * {
   padding: 0;
@@ -266,11 +266,12 @@ body.dark-mode {
   background: #292929;
 }
 .dark-mode .header, .dark-mode .huhu {background: #222222;}
- .dark-mode .header a , .dark-mode .links a { color: $c-primary}
-.dark-mode .timeago { color: $c-secondary}
+ .dark-mode .links a { color: $c-primary}
+.dark-mode .timeago { color: $c-primary}
+ 
 .dark-mode .link-list__link:hover:after,
 .dark-mode .link-list__link:focus:after {
-  background: #4b4b4b;
+  background: #3A79FF;
    
 }
 .dark-mode label {
@@ -348,7 +349,7 @@ position:fixed;
    .jsless-switchery {display: none;      width: 46%;
     margin: 0 auto; bottom:30px; }
   .header__logo {position: inherit;}
-ul.header__nav-list { display: block; text-align: center; line-height: 3}
+ul.header__nav-list { display: block; text-align: center; line-height: 2.5; font-size: 27px;}
 .huhu { /* display: flex; */
   /* display: flex; */
   background: #fff;
