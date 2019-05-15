@@ -2,17 +2,35 @@ $c-primary: #d4d4d4;
 $c-secondary: #777;
 body {
   font-size: 100%;
-  font-family: helvetica, arial;
+  font-family: helvetica, Arial,sans-serif;
 }
 a {
   text-decoration: none;
 }
 
+/* Dark Mode styles */
+body.dark-mode {
+  background: #292929;
+}
+.dark-mode .header, .dark-mode .huhu {background: #222222;}
+ .dark-mode .links a , .timeago { color: $c-primary}
+ 
+ .dark-mode .active { color: #D2E1FF}
+.dark-mode .link-list__link:hover:after,
+.dark-mode .link-list__link:focus:after {
+  background: #3A79FF;
+   
+}
+.dark-mode label {
+  color: white;
+}
 .links {
   max-width: 900px;
   margin: 0 auto;
   padding: 10px;
   margin-bottom: 30px;
+ 
+ 
   
 }
 .links a {
@@ -25,6 +43,7 @@ a {
   padding: .75em 0 .75em .75em;
   position: relative;
   text-decoration: none;
+
 }
 // .link-list__link:before {
 //   border-bottom: solid;
@@ -62,6 +81,7 @@ a {
   border-width: .25em;
 }
 .link-list__link:hover:after,
+ 
 .link-list__link:focus:after {
   background: #d2e1ff;
   width: 100%;
@@ -78,7 +98,32 @@ a {
   position: relative;
   z-index: 2;
   padding-right: 25px;
+  max-height: 100px;
+  overflow: hidden;
+ 
 }
+ 
+ /* necessary plugin styles */
+.ellip {
+  display: block;
+  height: 100%;
+}
+
+.ellip-line {
+  display: inline-block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+}
+
+.ellip,
+.ellip-line {
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+}
+ 
+
 @function rem-calc($size) {
   @return $size / 16px * 1rem;
 }
@@ -122,6 +167,7 @@ button {
     margin: 0 1.25rem;
     display: inline-block;
     color: $nav-text-color;
+ 
   }
   &__button {
     background-color: #D2E1FF;
@@ -254,29 +300,13 @@ button {
   color: $c-primary;
 }
 
-.sha {
+.shadow {
   box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px;
 
 }
 
 
 
-/* Dark Mode styles */
-body.dark-mode {
-  background: #292929;
-}
-.dark-mode .header, .dark-mode .huhu {background: #222222;}
- .dark-mode .links a { color: $c-primary}
-.dark-mode .timeago { color: $c-primary}
- 
-.dark-mode .link-list__link:hover:after,
-.dark-mode .link-list__link:focus:after {
-  background: #3A79FF;
-   
-}
-.dark-mode label {
-  color: white;
-}
 
 
 .jsless-switchery input {
@@ -348,8 +378,9 @@ position:fixed;
 @media (min-width: 10em) and (max-width: 50em) { 
    .jsless-switchery {display: none;      width: 46%;
     margin: 0 auto; bottom:30px; }
-  .header__logo {position: inherit;}
-ul.header__nav-list { display: block; text-align: center; line-height: 2.5; font-size: 27px;}
+//  .header__logo {position: inherit;}
+  a.header__nav-link {  font-size: 1.5rem}
+ul.header__nav-list { display: block; text-align: center; line-height: 2.5; margin-top: 30%  }
 .huhu { /* display: flex; */
   /* display: flex; */
   background: #fff;
