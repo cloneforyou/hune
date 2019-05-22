@@ -1,23 +1,29 @@
 <div class="  link-list__link" target="_blank" rel="nofollow noopener">
-  <a class="" href="{{ .Params.link }}" target="_blank" rel="nofollow noopener"
-    aria-describedby="link_meta">
+  <a class="" href="{{ .Params.link }}" target="_blank" rel="nofollow noopener" aria-describedby="link_meta">
     <span class="link-list__link__label  ">
-{{ .Title }}
+      {{ .Title }}
     </span> </a>
   <span class="link-list__link__meta " id="link_meta" aria-hidden="true">
-    <span class="link-list__link__meta">  
-        <a  href="/site/{{ .Params.site }}"
-        rel="nofollow noopener">{{ .Params.site | replaceRE "^www.([^/]+).*" "$1" }}</a>  &#8226;
-       <abbr class="timeago" title="{{ .Date.Format "2006-01-02 15:04" }}"> </abbr>
-      
-        <!-- {{- if .Params.tags -}} 
+    <span class="link-list__link__meta">
+      <a rel="nofollow noopener" target="_blank" href="//{{ .Params.site | replaceRE "^www.([^/]+).*" "$1" }}">
+        <img class="icon"
+          src="https://www.google.com/s2/favicons?domain={{ .Params.site | replaceRE "^www.([^/]+).*" "$1" }}">
+      </a>
+
+      <a href="/site/{{ .Params.site }}" rel="nofollow noopener">{{ .Params.site | replaceRE "^www.([^/]+).*" "$1" }}</a>
+
+      &middot;
+
+      <abbr class="timeago" title="{{ .Date.Format "2006-01-02 15:04" }}"> </abbr>
+
+      <!-- {{- if .Params.tags -}} 
         {{- range $key, $tag := .Params.tags }} 
             {{- if ne $key 0 }} {{ end }} <span>,<a href='/tags/{{ $tag | urlize }}'>{{ $tag | humanize}}</a></span>
         {{- end -}}
     {{- else -}} 
         
     {{- end -}} -->
- 
+
     </span>
   </span>
   <!-- <span class="divider">&#8226;</span> -->
@@ -31,4 +37,3 @@
       data-site='{{ .Params.site | replaceRE "^www.([^/]+).*" "$1" }}'>
     </a> -->
 </div>
-
