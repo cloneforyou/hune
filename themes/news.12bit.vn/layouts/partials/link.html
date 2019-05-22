@@ -12,7 +12,7 @@
 
       <a href="/site/{{ .Params.site }}" rel="nofollow noopener">{{ .Params.site | replaceRE "^www.([^/]+).*" "$1" }}</a>
 
-      &middot;
+      <span class="bull">&bull;</span>
 
       <abbr class="timeago" title="{{ .Date.Format "2006-01-02 15:04" }}"> </abbr>
 
