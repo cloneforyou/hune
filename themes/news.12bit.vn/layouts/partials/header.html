@@ -16,6 +16,8 @@
   {{ $post := resources.Get "css/main.scss" }}
   {{ $style :=  $post | resources.ToCSS | minify }}
   <link href="{{ $style.RelPermalink }}" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
   <meta name=theme-color content=#D2E1FF>
   <!-- {{ if eq (getenv "HUGO_ENV") "production" }}
   {{ $mainStyle := resources.Get "theme.css" | minify | fingerprint }}

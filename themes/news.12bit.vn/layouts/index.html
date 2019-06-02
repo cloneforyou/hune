@@ -1,7 +1,9 @@
 {{ partial "header" . }}
 <!-- {{ partial "topic-filter" . }} -->
 <main>
-         
+        <!-- {{ range $key, $value := .Site.Taxonomies.category }}
+	<li><a href="/category/{{ $key | urlize  }}">{{ $key | humanize }}</a> ({{ len $value }})</li>
+{{ end }} -->
         <div class="links">
                        
                 {{ $paginator := .Paginate (where .Pages "Type" "links") }}
