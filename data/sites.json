@@ -1,37 +1,7 @@
 {
   
-  "reddit.com": {
-    "rss_url": "https://zapier.com/engine/rss/4967870/CryptoCurrency/",
-    "topic": "crypto"
-  },
-  "bitcoinmagazine.com": {
-    "rss_url": "https://bitcoinmagazine.com/feed",
-    "topic": "crypto"
-  },
-  "news.bitcoin.com": {
-    "rss_url": "https://news.bitcoin.com/feed/",
-    "topic": "crypto"
-  },
-  "bitcoinist.com": {
-    "rss_url": "https://bitcoinist.com/feed/",
-    "topic": "crypto"
-  },
-  "ccn.com": {
-    "rss_url": "https://www.ccn.com/crypto/feed",
-    "topic": "crypto"
-  }, 
-  "coindesk.com": {
-    "rss_url": "https://feeds.feedburner.com/CoinDesk?format=xml",
-    "topic": "crypto"
-  },
-  "cointelegraph.com": {
-    "rss_url": "https://cointelegraph.com/rss",
-    "topic": "crypto"
-  },
-  "themerkle.com": {
-    "rss_url": "https://themerkle.com/feed/", 
-    "topic": "crypto"
-  },
+ 
+  
   "medium.com": {
     "rss_url": "https://medium.com/feed/tag/jamstack",
     "topic": "Webdev"
@@ -59,18 +29,12 @@
     "rss_url": "https://scotch.io/feed",
     "topic": "Webdev"
   },
-  "JAMstack_dev": {
-    "rss_url": "https://zapier.com/engine/rss/4967870/hune",
-    "topic": "Webdev"
-  },
+  
   "webplatform.news": {
     "rss_url": "https://webplatform.news/feed.xml",
     "topic": "Webdev"
   },
-  "github.com": {
-    "rss_url": "https://zapier.com/engine/rss/4967870/github/",
-    "topic": "Webdev"
-  },
+ 
   "changelog.com": {
     "rss_url": "https://changelog.com/feed",
     "topic": "Webdev"

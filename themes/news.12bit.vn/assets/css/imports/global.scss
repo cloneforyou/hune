@@ -14,7 +14,8 @@ body.dark-mode {
   background: #000;
 }
 .dark-mode .header, .dark-mode .huhu {background: #000;}
- .dark-mode .links a , .timeago { color: $c-primary}
+ .dark-mode .links a { color: #fff}
+ .dark-mode .timeago { color:  $c-primary}
  .dark-mode .header__nav-link { color: #fff;}
  .dark-mode .active { color: #fff}
 // .dark-mode .link-list__link:hover:after,
