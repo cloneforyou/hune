@@ -142,7 +142,7 @@ button {
 .header {
   display: flex;
   justify-content: space-between;
-  padding: rem-calc(18px) rem-calc(20px);
+  padding: 0 0.8rem 0.8rem 0.8rem;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -151,7 +151,7 @@ button {
   &__logo {
     width: rem-calc($header__logo-size);
     height: rem-calc($header__logo-size);
-    margin-top: rem-calc(26px-18px);
+    margin-top: .7rem;
     background-color: #5E81FE;
     border-radius: 50%; z-index: 999999;
     -moz-transition: background 2s;
@@ -408,7 +408,7 @@ ul.header__nav-list { display: block; text-align: center; line-height: 2.5; marg
 }
     
 
-.icon { float: left; margin-right: 10px;    margin-top: -1px;
+.icon { float: left; margin-right: 10px;    margin-top: -0.06rem;
 } 
 .bull {color: rgb(180, 177, 177) ;}
 

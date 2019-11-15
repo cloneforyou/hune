@@ -1,12 +1,10 @@
 {
   
- 
-  
   "medium.com": {
     "rss_url": "https://medium.com/feed/tag/jamstack",
     "topic": "Webdev"
   },
-  
+
   "news.ycombinator.com": {
     "rss_url": "https://hnrss.org/frontpage?points=100",
     "topic": "Hacker News"
@@ -40,8 +38,4 @@
     "topic": "Webdev"
   }
 
-
-
 }
-  
-
