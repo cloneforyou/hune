@@ -184,10 +184,12 @@ button {
     padding: rem-calc(13px);
   }
 }
+
 // TODO create break-points
 .header__nav--main,
 .header__nav--social {
   display: none;
+  
 }
 .header__button {
   display: none; 
@@ -425,3 +427,6 @@ ul.header__nav-list { display: block; text-align: center; line-height: 2.5; marg
 }
 
 
+nav.header__nav {
+ padding-top: 0.7rem; 
+ }
