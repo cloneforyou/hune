@@ -1,5 +1,9 @@
-{
+{ 
   
+  "blog.logrocket.com": {
+    "rss_url": "https://blog.logrocket.com/feed/",
+    "topic": "Webdev"
+  },
   "medium.com": {
     "rss_url": "https://medium.com/feed/tag/jamstack",
     "topic": "Webdev"
