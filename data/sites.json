@@ -8,7 +8,11 @@
     "rss_url": "https://zapier.com/engine/rss/6096337/hune/",
     "topic": "Webdev"
   },
-  
+  "itnext.io": {
+    "rss_url": " https://itnext.io/feed",
+    "topic": "Webdev"
+  },
+ 
   "news.ycombinator.com": {
     "rss_url": "https://hnrss.org/frontpage?points=100",
     "topic": "Hacker News"
