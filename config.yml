@@ -3,7 +3,7 @@ copyright: This work is licensed under a Creative Commons Attribution-ShareAlike
 title: Hune
 description: Browse multiple web development sites at the same time.
 baseURL: /
-theme: news.12bit.vn
+theme: hune
 enableGitInfo: true
 enableEmoji: true
 enableRobotsTXT: true
