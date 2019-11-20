@@ -2,7 +2,7 @@
   "echojs": {
     "rss_url": "http://www.echojs.com/rss",
     "topic": "Webdev"
-  },
+  }, 
   
   "blog.logrocket.com": {
     "rss_url": "https://snipcart.com/blog/rss",
