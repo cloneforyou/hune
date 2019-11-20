@@ -23,6 +23,7 @@
   {{ $mainStyle := resources.Get "theme.css" | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $mainStyle.RelPermalink }}">
   {{ end }} --> 
+
 </head> 
 <body> 
   <!-- <header id="masthead">
@@ -69,12 +70,12 @@
       <!--  START Hamburger Toggle  -->
       <div id="menu-toggle" class="d-block d-md-none">
         <div id="hamburger">
-          <span></span>
-          <span></span>
+          <span class="cs"></span>
+          <span class="cs"></span>
         </div>
         <div id="cross">
-          <span></span>
-          <span></span>
+          <span class="cs"></span>
+          <span class="cs"></span>
         </div>
       </div>
     </div>
