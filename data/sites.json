@@ -1,6 +1,10 @@
 { 
   
   "blog.logrocket.com": {
+    "rss_url": "https://snipcart.com/blog/rss",
+    "topic": "Webdev"
+  },
+  "snipcart.com": {
     "rss_url": "https://blog.logrocket.com/feed/",
     "topic": "Webdev"
   },
