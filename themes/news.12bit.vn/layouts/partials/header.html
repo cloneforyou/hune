@@ -17,8 +17,10 @@
   {{ $style :=  $post | resources.ToCSS | minify }}
   <link href="{{ $style.RelPermalink }}" rel="stylesheet" type="text/css" />
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css" rel="stylesheet">
 
-  <meta name=theme-color content=#D2E1FF>
+
+   <meta name=theme-color content=#D2E1FF>
   <!-- {{ if eq (getenv "HUGO_ENV") "production" }}
   {{ $mainStyle := resources.Get "theme.css" | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $mainStyle.RelPermalink }}">
