@@ -4,8 +4,7 @@ $c-secondary: #777;
 $dbg:#191919;
 body {
   font-size: 100%;
-  font-family: 'Roboto', sans-serif;
-  -moz-osx-font-smoothing: grayscale;
+   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   
   font: 400 16px/1.79 'Roboto', -apple-system, BlinkMacSystemFont,
@@ -26,11 +25,11 @@ body.dark-mode {
 }
 .dark-mode .header, .dark-mode .huhu {background: $dbg; z-index: 9999;}
  .dark-mode .links a { color: #fff}
- 
+ .dark-mode .link-list__link {  background: rgba(46,45,45,.8);  }
  .dark-mode .timeago { color:  $c-primary}
  .dark-mode .header__nav-link { color: #fff; z-index: 9999;}
  .dark-mode .active { color: #fff}
- .dark-mode .link-list__link .share-box{    background: rgba(46,45,45,.8);
+ .dark-mode   .share-box  {    background: rgba(46,45,45,.8); 
   /* margin-bottom: 10px; */
   border: 1px solid #282828;
   box-shadow: 0 1px 2px rgba(0,0,0,.5);
