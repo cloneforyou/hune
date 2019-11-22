@@ -1,10 +1,15 @@
-<div class="  link-list__link" target="_blank" rel="nofollow noopener">
-  <a  href="{{ .Params.link }}" target="_blank" rel="nofollow noopener" aria-describedby="link_meta">
-    <span class="link-list__link__label  ">
-      {{ .Title }}
-    </span> </a>
-  <span class="link-list__link__meta " id="link_meta" aria-hidden="true">
-    <span class="link-list__link__meta">
+<div class="  link-list__link" >
+
+ 
+  <a class="link-title" href='{{ .Params.link }}' rel="nofollow noopener" target="_blank">
+    <div class='link-title'>
+    <p>{{ .Title }}</p>
+    </div>
+    </a>
+
+
+  <div class=" btm" id="link_meta" aria-hidden="true">
+ 
       <a rel="nofollow noopener" target="_blank" href="//{{ .Params.site | replaceRE "^www.([^/]+).*" "$1" }}">
         <img class="icon"
           src="https://www.google.com/s2/favicons?domain={{ .Params.site | replaceRE "^www.([^/]+).*" "$1" }}">
@@ -24,8 +29,8 @@
         
     {{- end -}} -->
 
-    </span> 
-  </span>
+ 
+      </div>
   <!-- <span class="divider">&#8226;</span> -->
   <!-- <a
       href="#"

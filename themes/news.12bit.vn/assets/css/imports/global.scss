@@ -4,7 +4,16 @@ $dbg:#191919;
 body {
   font-size: 100%;
   font-family: 'Roboto', sans-serif;
-
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  
+  font: 400 16px/1.79 'Roboto', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue',
+    sans-serif;
+  font-size: calc(16px + (24 - 16) * (100vw - 320px) / (750 - 320));
+  @media (min-width: 750px) {
+    font-size: 20px;
+  }
 }
 a {
   text-decoration: none;
@@ -14,13 +23,17 @@ a {
 body.dark-mode {
   background: #282828;
 }
-.dark-mode .header, .dark-mode .huhu {background: $dbg}
+.dark-mode .header, .dark-mode .huhu {background: $dbg; z-index: 9999;}
  .dark-mode .links a { color: #fff}
  .dark-mode .links a:active {background: none;}
  .dark-mode .timeago { color:  $c-primary}
- .dark-mode .header__nav-link { color: #fff;}
+ .dark-mode .header__nav-link { color: #fff; z-index: 9999;}
  .dark-mode .active { color: #fff}
- .dark-mode .link-list__link { background: rgba(46, 45, 45, 0.8); margin-bottom: 10px;}
+ .dark-mode .link-list__link {    background: rgba(46,45,45,.8);
+  /* margin-bottom: 10px; */
+  border: 1px solid #282828;
+  box-shadow: 0 1px 2px rgba(0,0,0,.5);
+  height: 120px;;}
 // .dark-mode .link-list__link:hover:after,
 // .dark-mode .link-list__link:focus:after {
 //   background: #3A79FF;
@@ -50,7 +63,7 @@ body.dark-mode {
 .link-list__link {
   color: #333;
   display: block;
-  padding: .75em 0 .75em .75em;
+  padding: .7em;
   position: relative;
   text-decoration: none;
   border-radius: 5px;
@@ -73,31 +86,31 @@ body.dark-mode {
 //   z-index: 2;
 //   color: $c-primary;
 // }
-.link-list__link:after {
+// .link-list__link:after {
  
-  bottom: 0;
-  content: '';
-  height: 100%;
-  left: 0;
-  position: absolute;
-  // transition: background .2s ease-in-out, width .4s ease-in-out;
-  width: 0%;
-}
-.link-list__link:hover .link-list__link__label,
-.link-list__link:focus .link-list__link__label {
-  text-decoration: none;
-}
-.link-list__link:hover:before,
-.link-list__link:focus:before {
-  border-width: .25em;
-}
-.link-list__link:hover:after,
+//   bottom: 0;
+//   content: '';
+//   height: 100%;
+//   left: 0;
+//   position: absolute;
+//   // transition: background .2s ease-in-out, width .4s ease-in-out;
+//   width: 0%;
+// }
+// .link-list__link:hover .link-list__link__label,
+// .link-list__link:focus .link-list__link__label {
+//   text-decoration: none;
+// }
+// .link-list__link:hover:before,
+// .link-list__link:focus:before {
+//   border-width: .25em;
+// }
+// .link-list__link:hover:after,
  
-.link-list__link:focus:after {
+// .link-list__link:focus:after {
  
-  width: 100%;
+//   width: 100%;
    
-}
+// }
 .link-list__link__meta {
   color: #444;
   font-size: .75em;
@@ -115,25 +128,25 @@ body.dark-mode {
  
 }
  
- /* necessary plugin styles */
-.ellip {
-  display: block;
-  height: 100%;
-}
+//  /* necessary plugin styles */
+// .ellip {
+//   display: block;
+//   height: 100%;
+// }
 
-.ellip-line {
-  display: inline-block;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  word-wrap: normal;
-}
+// .ellip-line {
+//   display: inline-block;
+//   text-overflow: ellipsis;
+//   white-space: nowrap;
+//   word-wrap: normal;
+// }
 
-.ellip,
-.ellip-line {
-  position: relative;
-  overflow: hidden;
-  max-width: 100%;
-}
+// .ellip,
+// .ellip-line {
+//   position: relative;
+//   overflow: hidden;
+//   max-width: 100%;
+// }
  
 
 @function rem-calc($size) {
@@ -219,7 +232,7 @@ button {
 // --- Hamburger - Menu Toggle --- //
 #hamburger span,
 #cross span {
-  z-index: 99;
+  z-index: 999999;
   display: block;
   background: $c-primary;
   border-radius: 0;
@@ -228,7 +241,7 @@ button {
     background: $c-secondary;
   }
 }
-#menu-toggle {
+#menu-toggle { z-index: 9999;
   width: 30px;
   height: 30px;
   cursor: pointer;
@@ -237,7 +250,7 @@ button {
   background: transparent;
   border-radius: 0;
   #hamburger {
-    position: absolute;
+    position: absolute;  
     height: 100%;
     width: 100%;
     span {
@@ -308,11 +321,18 @@ button {
 .ias-noneleft,
 .ias-spinner,
 .load-more.center {
-  position: fixed; bottom: 0; left: 0;   width: 100%;  
-  text-align: center;   height: 60px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+ 
+ 
+  padding : 20px;
+ 
 }
 .ias-spinner {
-  display: flex;
+   display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -420,11 +440,21 @@ ul.header__nav-list { display: block; text-align: center; line-height: 2.5; marg
 }
     
 
-.icon { float: left; margin-right: 10px;    margin-top: -0.1rem;
+.icon {     float: left;
+  margin-right: 10px;
+   
 } 
-.bull {color: rgb(180, 177, 177) ;}
+.bull {color: rgb(180, 177, 177) ;    margin: 0 5px 0 5px;}
 
-
+div#link_meta {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  /* margin-top: 25px; */
+  position: fixed;
+  position: absolute;
+  bottom: 10px;
+}
 #search-button {
   width: 100px;
   height: 50px;
@@ -544,3 +574,19 @@ header {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+
+
+.link-title {
+ 
+  margin-bottom: .4rem;
+  display: -webkit-box;
+  //  height: 109.2px;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.325;
+z-index: 999;
+height: 50px;
+}
+ 
