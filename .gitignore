@@ -7,5 +7,5 @@ resources/
 package.json
 webpack.config.js
 yarn.lock
-.editorconfig
+.editorconfig 
 themes/news\.12bit\.vn/assets/main\.js
