@@ -6,7 +6,7 @@ baseURL: /
 theme: hune
 enableGitInfo: true
 enableEmoji: true
-enableRobotsTXT: true
+enableRobotsTXT: false
 disableHugoGeneratorInject: true
 googleAnalytics: 
 paginate: 40
@@ -31,7 +31,7 @@ params:
     url: 'https://github.com/cioranique/hune'
 blackfriday:
   hrefTargetBlank: true
-  noreferrerLinks: true
+  noreferrerLinks: true 
 # menu:
 #   main:
 #   - identifier: contribute
