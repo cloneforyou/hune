@@ -1,6 +1,6 @@
 $c-primary: rgba(255, 255, 255, 0.7);
 
-$white: rgba(255,255,255,.88);
+$white: rgba(255, 255, 255, .88);
 $c-secondary: #777;
 $dbg:#191919;
 
@@ -13,7 +13,11 @@ body {
     'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue',
     sans-serif;
   font-size: calc(16px + (24 - 16) * (100vw - 320px) / (750 - 320));
-h1 { color: $white;}
+
+  h1 {
+    color: $white;
+  }
+
   @media (min-width: 750px) {
     font-size: 20px;
   }
@@ -24,28 +28,26 @@ a {
 }
 
 
-.links , .bookmark {
+.links,
+.bookmark {
   max-width: 900px;
   margin: 0 auto;
   padding: 10px;
   margin-bottom: 50px;
-
-
-
 }
 
- 
+
 
 .links a {
   color: #000
 }
 
 .link-list__link {
-  
+
   margin-bottom: 10px;
   background-color: rgb(243, 242, 242);
 }
- 
+
 
 .link-list__link__label:active {
   background: none;
@@ -65,17 +67,19 @@ a {
   border-radius: 5px;
 
 }
+
 .share-box {
   height: 120px;
   // border: 1px solid #eee;
   box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
- 
+
 }
+
 .share-icons {
   display: none;
 }
 
- 
+
 .link-list__link__meta {
   color: #444;
   font-size: .75em;
@@ -116,7 +120,7 @@ button {
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 0 0.8rem 0.8rem 0.8rem;
+  padding: 0.8rem;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -124,7 +128,7 @@ button {
   z-index: 3;
   justify-content: space-between;
 
-  padding-top: 15px;
+
 
   &__logo {
     width: rem-calc($header__logo-size);
@@ -244,13 +248,13 @@ button {
   }
 
   #cross {
-    width: 30px; 
+    width: 30px;
     top: 0;
     right: 0;
     z-index: 101;
     position: absolute;
     height: 100%;
-    
+
     transform: rotate(45deg);
 
     span {
@@ -412,7 +416,9 @@ button {
   border: none;
 }
 
- .share-icon, .bookmark-icon {cursor: pointer;
+.share-icon,
+.bookmark-icon {
+  cursor: pointer;
   margin-right: 10px;
   display: none;
   /* float: right; */
@@ -426,8 +432,11 @@ button {
   height: 40px;
   /* background: transparent; */
 }
-button.bookmark-icon { right: 40px;  }
- 
+
+button.bookmark-icon {
+  right: 40px;
+}
+
 svg {
   fill: #ffffff;
 }
@@ -437,21 +446,37 @@ svg {
   align-items: center;
   justify-content: center;
 }
-bookmark-icon {display: none;  } 
- 
+
+bookmark-icon {
+  display: none;
+}
 
 
-button.added i { color: $white; }
- .show { display: block;}
- 
- 
- .bookmark { 
+
+button.added i {
+  color: $white;
+}
+
+.show {
+  display: block;
+}
+
+
+.bookmark {
   //  background: #282828;    
   // bottom: 0; top: 64px; position: absolute;
   //  z-index: 999; margin: 0 auto; right: 0; left: 0;
   //  position: fixed; 
-  height:0;width:0;overflow:hidden; margin: 0;
-} 
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  margin: 0;
+}
+
+.bookmark {
+  padding: 0;
+}
+
 span.bt {
   margin-right: 10px;
 }
@@ -459,37 +484,55 @@ span.bt {
 nav {
   position: relative;
 }
+
 .dropdown-toggle {
   padding: .5em 1em;
   background: #191919;
-  border-radius: .2em .2em 0 0; 
+  border-radius: .2em .2em 0 0;
 }
+
 ul.dropdown {
-  display:none;
+  display: none;
   position: absolute;
-  top: 100%; right:0%;
-  margin-top: 0.8em; box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
-  background: #fff; font-size: 100%;
+  top: 100%;
+  right: -5px;
+  margin-top: 0.75em;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+  background: #fff;
+  font-size: 100%;
   min-width: 12em;
   padding: 0;
   border-radius: 0 0 .2em .2em;
-    li {
-      list-style-type: none;
-      a {
-        text-decoration: none;
-        padding: .5em 1em;
-        display: block;
-      }
-   }
+
+  li {
+    list-style-type: none;
+
+    a {
+      text-decoration: none;
+      padding: .5em 1em;
+      display: block;
+    }
+  }
 }
+
 a.js-b-indicator.indicator {
   line-height: 0;
 }
-span.js-b-counter.counter , i.fa  {color: #191919;}
+
+span.js-b-counter.counter,
+i.fa {
+  color: #191919;
+}
+
 .dropdown-list-header {
   text-align: center;
   padding: 20px;
   /* margin: 0; */
 }
 
-.no-item, .dropdown-list-header { text-align: center;} 
+.no-item,
+.dropdown-list-header {
+  text-align: center;
+  color: #191919;
+  padding: 2em;;
+}

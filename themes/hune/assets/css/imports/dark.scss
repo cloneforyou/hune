@@ -30,7 +30,7 @@ body.dark-mode {
     &:hover { background: rgba(0,0,0,.1);}
   }
   
-  .dark-mode span.js-b-counter.counter ,  .dark-mode i.fa   {
+  .dark-mode span.js-b-counter.counter ,  .dark-mode i.fa, .dark-mode .no-item   {
     color: $white
   }
   // .dark-mode i.fa  {
