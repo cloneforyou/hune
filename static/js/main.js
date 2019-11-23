@@ -146,6 +146,8 @@ $(function() {
     var target = e.target;
     if (!$(target).is('.dropdown-toggle') && !$(target).parents().is('.dropdown-toggle')) {
       $('.dropdown').hide();
+      $('#menu-toggle').removeClass('open');
+
     }
   });
   

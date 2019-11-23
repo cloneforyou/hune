@@ -9,11 +9,11 @@ body.dark-mode {
     z-index: 9999;
   }
   
-  .dark-mode .links a, .darkmode .bookrmak a {
-    color: #fff
+  .dark-mode .links a, .darkmode .bookrmak a  {
+    color: $white
   }
    .darkmode   a.link-title  {
-    color: #fff
+    color: $white
   }
  
   .dark-mode .link-list__link {
@@ -25,15 +25,18 @@ body.dark-mode {
   }
   
   .dark-mode .header__nav-link {
-    color: #fff;
+    color: $white;
     z-index: 9999;
     &:hover { background: rgba(0,0,0,.1);}
   }
   
-  .dark-mode .active {
-    color: #fff
+  .dark-mode span.js-b-counter.counter ,  .dark-mode i.fa   {
+    color: $white
   }
-  
+  // .dark-mode i.fa  {
+  //   color: $white
+  // }
+  .dark-mode button.added i  { color: #191919; }
   .dark-mode .share-box {
     background: rgba(46, 45, 45, .8);
     /* margin-bottom: 10px; */
@@ -41,8 +44,8 @@ body.dark-mode {
     box-shadow: 0 1px 2px rgba(0, 0, 0, .5);
     height: 120px;
   }
-  
+  .dark-mode ul.dropdown {background:#191919; ;} 
   .dark-mode label {
-    color: white;
+    color: $white;
   }
   

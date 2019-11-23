@@ -192,9 +192,9 @@ document.addEventListener('click', (e) => {
 
   let addedNode = document.querySelector(`[data-link="${link}"]`)
   //  addedNode.classList.remove('added')
-  //  location.reload();
+
   // $(".bookmark").load(" .bookmark > *");
-  // location.reload();
+   location.reload();
 })
 
 

@@ -438,10 +438,10 @@ svg {
   justify-content: center;
 }
 bookmark-icon {display: none;  } 
-.fa , a { color: rgba(255, 255, 255, 0.88);  }
+ 
 
 
-button.added i { color: black; }
+button.added i { color: $white; }
  .show { display: block;}
  
  
@@ -468,8 +468,8 @@ ul.dropdown {
   display:none;
   position: absolute;
   top: 100%; right:0%;
-  margin-top: 0.8em;
-  background: #191919; font-size: 100%;
+  margin-top: 0.8em; box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+  background: #fff; font-size: 100%;
   min-width: 12em;
   padding: 0;
   border-radius: 0 0 .2em .2em;
@@ -482,7 +482,10 @@ ul.dropdown {
       }
    }
 }
-
+a.js-b-indicator.indicator {
+  line-height: 0;
+}
+span.js-b-counter.counter , i.fa  {color: #191919;}
 .dropdown-list-header {
   text-align: center;
   padding: 20px;
