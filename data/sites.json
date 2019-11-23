@@ -2,12 +2,9 @@
   
   "producthunt": {
     "rss_url": "https://www.producthunt.com/feed",
-    "topic": "products"
+    "topic": "product hunt"
   }, 
-  "betalist": {
-    "rss_url": "http://feeds.feedburner.com/betalist",
-    "topic": "products"
-  }, 
+ 
   
   "echojs": {
     "rss_url": "http://www.echojs.com/rss",
