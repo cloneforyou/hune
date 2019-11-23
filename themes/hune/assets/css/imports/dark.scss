@@ -13,9 +13,9 @@ body.dark-mode {
     color: #fff
   }
   
-//   .dark-mode .link-list__link {
-//     background: rgba(46, 45, 45, .8);
-//   }
+  .dark-mode .link-list__link {
+    background: rgba(46, 45, 45, .8);
+   }
   
   .dark-mode .timeago {
     color: $c-primary

@@ -3,8 +3,16 @@
   <!-- <p>made with ☕ by <a href="https://12bit.vn" target="_blank" rel="nofollow noopener">12bit.vn</a></p> -->
 </footer>
 
+{{ if .Site.IsServer }}
+<!-- DEVELOPMENT -->
 <script src="/js/jquery.min.js"></script>
 <script type="text/javascript" src="/js/jquery-ias.min.js"></script>
+
+{{ else }}
+<script type="text/javascript" src="https://d33wubrfki0l68.cloudfront.net/js/0d91a00bec28cc0e96440600f75b18b20a8c9786/js/jquery-ias.min.js"></script>
+<script src="/js/jquery.min.js"></script>
+{{ end }}
+
 
 <!-- <script type="text/javascript" src="/js/bookmark.js"></script> -->
 <script type="text/javascript" src="/js/main.js"></script>
