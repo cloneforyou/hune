@@ -8,8 +8,8 @@
   
     //  .header__logo {position: inherit;}
     a.header__nav-link {
-      font-size: 1.5rem;
-      text-transform: uppercase;
+      // font-size: 1.5rem;
+      // text-transform: uppercase;
     }
   
     ul.header__nav-list {
@@ -47,7 +47,7 @@
   
     div.header__nav--mobile,
     #hamburger {
-      display: none;
+      display: block;
     }
 
   }

@@ -20,7 +20,7 @@ outputs:
     - RSS
  
 disableKinds:
-  - taxonomyTerm
+ # - taxonomyTerm
   - sitemap
 params:
   description: Browse multiple web development sites at the same time.
@@ -41,5 +41,6 @@ blackfriday:
 taxonomies:
   topic: topic
   site: site
+  bookmark: bookmark
   # tags: tags
   category: category

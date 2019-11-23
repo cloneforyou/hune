@@ -1,4 +1,14 @@
-{ 
+{
+  
+  "producthunt": {
+    "rss_url": "https://www.producthunt.com/feed",
+    "topic": "products"
+  }, 
+  "betalist": {
+    "rss_url": "http://feeds.feedburner.com/betalist",
+    "topic": "products"
+  }, 
+  
   "echojs": {
     "rss_url": "http://www.echojs.com/rss",
     "topic": "Webdev"
@@ -8,6 +18,7 @@
     "rss_url": "https://snipcart.com/blog/rss",
     "topic": "Webdev"
   },
+
   "snipcart.com": {
     "rss_url": "https://blog.logrocket.com/feed/",
     "topic": "Webdev"

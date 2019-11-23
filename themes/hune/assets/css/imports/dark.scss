@@ -9,10 +9,12 @@ body.dark-mode {
     z-index: 9999;
   }
   
-  .dark-mode .links a {
+  .dark-mode .links a, .darkmode .bookrmak a {
     color: #fff
   }
-   
+   .darkmode   a.link-title  {
+    color: #fff
+  }
   .dark-mode .link-list__link {
     background: rgba(46, 45, 45, .8);
    }

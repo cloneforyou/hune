@@ -1,7 +1,7 @@
 {{ partial "header" . }}
-<!-- {{ partial "topic-filter" . }} -->
+{{ partial "bookmarks" . }}
 <main>
-  <div class="links">
+  <div class="links  ">
     {{ $paginator := .Paginate (where .Pages "Type" "links") }}
     {{ range $paginator.Pages }}
     {{ partial "link" . }}
@@ -13,17 +13,7 @@
       {{ end }}
     </div>
   </div><!-- end .links -->
-  <div class="jsless-switchery">
-    <input type="checkbox" name="switch" id="switch" />
-    <label for="switch"></label>
-  </div>
-  <div class="bookmark" title="Your bookmark links">
-        
-      <div class="dropdown-list-header">
-        <span>Your bookmarks</span>
-        <span class="  js-b-close-mobile-dropdown" data-icon="x"></span>
-      </div>
-      <div class="js-b-dropdown dropdown-list"></div>
-    </div>
+ 
+  
 </main><!-- end #content -->
 {{ partial "footer" . }}

@@ -219,6 +219,9 @@ button {
     position: absolute;
     height: 100%;
     width: 100%;
+    width: 30px;
+    top: 0;
+    right: 0;
 
     span {
       height: 2px;
@@ -240,10 +243,13 @@ button {
   }
 
   #cross {
+    width: 30px; 
+    top: 0;
+    right: 0;
     z-index: 101;
     position: absolute;
     height: 100%;
-    width: 100%;
+    
     transform: rotate(45deg);
 
     span {
@@ -405,7 +411,7 @@ button {
   border: none;
 }
 
- .share-icon, .bookmark-icon {
+ .share-icon, .bookmark-icon {cursor: pointer;
   margin-right: 10px;
   display: none;
   /* float: right; */
@@ -419,7 +425,7 @@ button {
   height: 40px;
   /* background: transparent; */
 }
-button.bookmark-icon { right: 40px;   }
+button.bookmark-icon { right: 40px;  }
  
 svg {
   fill: #ffffff;
@@ -431,15 +437,53 @@ svg {
   justify-content: center;
 }
 bookmark-icon {display: none;  } 
-.fa { color: rgba(255, 255, 255, 0.88);  }
+.fa , a { color: rgba(255, 255, 255, 0.88);  }
 
 
 button.added i { color: black; }
+ .show { display: block;}
  
  
- 
- .bookmark { background: red;    
-  bottom: 0; top: 64px; position: absolute;
-   z-index: 999; margin: 0 auto; right: 0; left: 0;
-   position: fixed; display: none;
+ .bookmark { 
+  //  background: #282828;    
+  // bottom: 0; top: 64px; position: absolute;
+  //  z-index: 999; margin: 0 auto; right: 0; left: 0;
+  //  position: fixed; 
+     display: none;
 }
+
+
+nav {
+  position: relative;
+}
+.dropdown-toggle {
+  padding: .5em 1em;
+  background: #191919;
+  border-radius: .2em .2em 0 0; 
+}
+ul.dropdown {
+  display:none;
+  position: absolute;
+  top: 100%; right:0%;
+  margin-top: .5em;
+  background: #191919; font-size: 100%;
+  min-width: 12em;
+  padding: 0;
+  border-radius: 0 0 .2em .2em;
+    li {
+      list-style-type: none;
+      a {
+        text-decoration: none;
+        padding: .5em 1em;
+        display: block;
+      }
+   }
+}
+
+.dropdown-list-header {
+  text-align: center;
+  padding: 20px;
+  /* margin: 0; */
+}
+
+.no-item, .dropdown-list-header { text-align: center;}
