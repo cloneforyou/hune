@@ -1,5 +1,6 @@
 {{ partial "header" . }}
-<!-- {{ partial "topic-filter" . }} -->
+
+{{ partial "bookmarks" . }}
 <main>
   <div class="links">
     {{ $paginator := .Paginate (where .Pages "Type" "links") }}

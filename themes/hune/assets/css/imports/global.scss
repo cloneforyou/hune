@@ -452,7 +452,9 @@ button.added i { color: black; }
   //  position: fixed; 
   height:0;width:0;overflow:hidden; margin: 0;
 }
-
+span.bt {
+  margin-right: 10px;
+}
 
 nav {
   position: relative;
