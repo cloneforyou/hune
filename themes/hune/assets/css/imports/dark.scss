@@ -15,6 +15,7 @@ body.dark-mode {
    .darkmode   a.link-title  {
     color: #fff
   }
+ 
   .dark-mode .link-list__link {
     background: rgba(46, 45, 45, .8);
    }
@@ -26,6 +27,7 @@ body.dark-mode {
   .dark-mode .header__nav-link {
     color: #fff;
     z-index: 9999;
+    &:hover { background: rgba(0,0,0,.1);}
   }
   
   .dark-mode .active {

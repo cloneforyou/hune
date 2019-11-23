@@ -7,7 +7,7 @@
 	<li><a href="/category/{{ $key | urlize  }}">{{ $key | humanize }}</a> ({{ len $value }})</li>
 {{ end }} -->
         <div class="links">
-                       
+                        <div class="bookmark js-b-dropdown" title="Your bookmark links"></div>
                 {{ $paginator := .Paginate (where .Pages "Type" "links") }}
                 {{ range $paginator.Pages }}
                 {{ partial "link" . }}

@@ -450,7 +450,7 @@ button.added i { color: black; }
   // bottom: 0; top: 64px; position: absolute;
   //  z-index: 999; margin: 0 auto; right: 0; left: 0;
   //  position: fixed; 
-     display: none;
+  height:0;width:0;overflow:hidden; margin: 0;
 }
 
 

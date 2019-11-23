@@ -133,9 +133,9 @@ document.addEventListener('click', (e) => {
   }
 })
 
-document.querySelector('.js-b-close-mobile-dropdown').addEventListener('click', () => {
-  hideDropdown()
-})
+// document.querySelector('.js-b-close-mobile-dropdown').addEventListener('click', () => {
+//   hideDropdown()
+// })
 
 // Add/remove bookmark
 document.querySelectorAll('.js-b-additem').forEach(node => {
@@ -191,8 +191,8 @@ document.addEventListener('click', (e) => {
   localStorage.setItem('bookmark_items', JSON.stringify(items))
 
   let addedNode = document.querySelector(`[data-link="${link}"]`)
-   addedNode.classList.remove('added')
-   location.reload();
+  //  addedNode.classList.remove('added')
+  //  location.reload();
   // $(".bookmark").load(" .bookmark > *");
   // location.reload();
 })
