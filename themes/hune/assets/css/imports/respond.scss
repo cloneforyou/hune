@@ -35,6 +35,7 @@
       position: fixed;
       /* margin: 0 auto; */
     }
+    .link-list__link {padding: .3em; }
   }
 
   @media only screen and (min-width: rem-calc(768px)) {
@@ -48,6 +49,6 @@
     #hamburger {
       display: none;
     }
-  
+
   }
   

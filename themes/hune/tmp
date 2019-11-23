@@ -2,3 +2,8 @@
 
         //   {{- if .Params.category -}} "category": "{{- range $key, $tag := .Params.category }} {{- if ne $key 0 }} {{ end }} {{ $tag | humanize}}, {{- end -}}{{- end -}}"
  
+
+  <!-- {{ if eq (getenv "HUGO_ENV") "production" }}
+  {{ $mainStyle := resources.Get "theme.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $mainStyle.RelPermalink }}">
+  {{ end }} --> 

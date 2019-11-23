@@ -23,7 +23,7 @@ a {
 }
 
 
-.links {
+.links , .bookmark {
   max-width: 900px;
   margin: 0 auto;
   padding: 10px;
@@ -347,7 +347,7 @@ button {
 div#link_meta {
   display: flex;
   align-items: center;
-  font-size: 14px;
+  font-size: 13px;
   position: fixed;
   position: absolute;
   bottom: 10px;
@@ -405,7 +405,7 @@ button {
   border: none;
 }
 
-button.share-icon {
+ .share-icon, .bookmark-icon {
   margin-right: 10px;
   display: none;
   /* float: right; */
@@ -419,7 +419,8 @@ button.share-icon {
   height: 40px;
   /* background: transparent; */
 }
-
+button.bookmark-icon { right: 40px;   }
+ 
 svg {
   fill: #ffffff;
 }
@@ -428,4 +429,17 @@ svg {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+bookmark-icon {display: none;}
+.fa { color: white;  }
+
+
+button.added i { color: black;}
+ 
+ 
+ 
+ .bookmark { background: red;    
+  bottom: 0; top: 64px; position: absolute;
+   z-index: 999; margin: 0 auto; right: 0; left: 0;
+   position: fixed; display: none;
 }

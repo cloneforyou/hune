@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name=theme-color content=#282828>
   <title>{{ .Title }}</title>
-  {{ template "_internal/google_news.html" . -}}
+  <!-- {{ template "_internal/google_news.html" . -}} -->
   {{ template "_internal/opengraph.html" . -}}
   {{ template "_internal/twitter_cards.html" . -}}
   {{ template "_internal/schema.html" . -}}
@@ -17,7 +18,7 @@
   {{ $style :=  $post | resources.ToCSS | minify }}
   <link href="{{ $style.RelPermalink }}" rel="stylesheet" type="text/css" />
   
-  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
@@ -28,38 +29,24 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css" rel="stylesheet">
 
 
-   <meta name=theme-color content=#282828>
-  <!-- {{ if eq (getenv "HUGO_ENV") "production" }}
-  {{ $mainStyle := resources.Get "theme.css" | minify | fingerprint }}
-  <link rel="stylesheet" href="{{ $mainStyle.RelPermalink }}">
-  {{ end }} --> 
+   
+ 
 
 </head> 
 <body> 
   <!-- <header id="masthead">
-        <nav class="nav" tabindex="-1" onclick="this.focus()">
-            <div class="container">
-           <a href="/" aria-label="Trang chủ">
-        hune
-          </a>
-        </nav>
-          <div class="bookmark" title="Your bookmark links">
-            <a href="#" class="js-b-indicator indicator">
-              <span class="i-octicon" data-icon="star"></span>
-              <span class="hide-on-mobile">Bookmark</span>
-              <span class="js-b-counter counter">0</span>
-            </a>
+    
+         <div class="bookmark" title="Your bookmark links">
+        
             <div class="dropdown-list-header">
               <span>Your bookmarks</span>
               <span class="i-octicon js-b-close-mobile-dropdown" data-icon="x"></span>
             </div>
             <div class="js-b-dropdown dropdown-list"></div>
           </div>
-          <a class="button is-primary" href="{{ .Site.Params.cta.url }}" target="_blank" rel="nofollow noopener">
-            {{ .Site.Params.cta.title }}
-          </a>
+          
         </div>
-    </header>end #masthead -->
+    </header>  -->
   <header class="header">
     <a href="/" class="header__logo"></a>
     <!-- <nav class="header__nav  header__nav--main">
@@ -71,7 +58,10 @@
         <li class="header__nav-link">Documentation</li>
       </ul>
     </nav> -->
-   
+    <a href="#" class="js-b-indicator indicator ">
+       <span class="bt">Bookmark</span>
+      <span class="js-b-counter counter">0</span>
+    </a>
     {{ partial "topic-filter" . }}
     
     <!-- {{ partial "search-input" . }} -->
@@ -89,4 +79,8 @@
         </div> 
       </div> 
     </div>
+   
   </header>
+
+    
+  

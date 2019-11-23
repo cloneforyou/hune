@@ -21,6 +21,7 @@ outputs:
  
 disableKinds:
   - taxonomyTerm
+  - sitemap
 params:
   description: Browse multiple web development sites at the same time.
   favicon: img/favicon.png

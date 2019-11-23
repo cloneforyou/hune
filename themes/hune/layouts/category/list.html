@@ -6,6 +6,7 @@
     {{ range $paginator.Pages }}
     {{ partial "link" . }}
     {{ end }}
+    
     <div class="load-more center">
       {{ if .Paginator.HasNext }}
       <a class="more" href="{{ .Paginator.Next.URL }}">More posts</a>
