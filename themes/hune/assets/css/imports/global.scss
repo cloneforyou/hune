@@ -519,11 +519,12 @@ a.js-b-indicator.indicator {
   line-height: 0;
 }
 
-span.js-b-counter.counter,
-i.fa {
-  color: #191919;
-}
 
+i.fa-bookmark {
+  color: $white;
+}
+span.js-b-counter.counter,
+i.fa { color: #191919;}
 .dropdown-list-header {
   text-align: center;
   padding: 20px;
