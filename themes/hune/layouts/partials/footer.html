@@ -28,7 +28,7 @@
   {{ $secureJS := . | resources.Fingerprint | minify }}
   <script src="{{ $secureJS.Permalink }}" integrity="{{ $secureJS.Data.Integrity }}" crossorigin="anonymous" async></script>
 {{ end }}
-{{ with $main  }}
+{{ with $main  }} 
 {{ $mainJS := . | resources.Fingerprint | minify}}
 
 <script src="{{ $mainJS.Permalink }}" integrity="{{ $mainJS.Data.Integrity }}" crossorigin="anonymous" async></script>
