@@ -117,6 +117,7 @@ else
 $(this).css("background-color","rgb(243, 242, 242)");
 });  
 }
+
 $('.link-list__link').mouseover(function() {
 $(this).find('.share-icon, .bookmark-icon').show()
 }).mouseout(function() { 
@@ -152,3 +153,4 @@ $(function() {
   });
   
   });
+  
