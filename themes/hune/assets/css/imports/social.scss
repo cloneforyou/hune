@@ -7,8 +7,8 @@ ul {
     display:block;
     margin: 0 auto;  
 }
-.social-icon {
-    color: #fff;
+.social-icon i{
+    color: $white;
 }
 ul.social-icons {
     margin-top: 5px;
@@ -19,7 +19,7 @@ ul.social-icons {
      
 }
 .social-icons a {
-    color: #fff;
+ 
     text-decoration: none; 
  
 }
@@ -33,7 +33,10 @@ ul.social-icons {
     background-color: rgba(46,45,45,.8);   
      border: 1px solid #282828;
     border-radius: 50%;
+
 }
+// i.fa.fa-linkedin, i.fa.fa-twitter, i.fa.fa-facebook  {    color: $white;
+// }
 .fa-facebook:hover {
    color: #3d5b99;
    

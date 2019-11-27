@@ -30,7 +30,7 @@ body.dark-mode {
     &:hover { background: rgba(0,0,0,.1);}
   }
   
-  .dark-mode span.js-b-counter.counter ,  .dark-mode i.fa, .dark-mode .no-item   {
+  .dark-mode span.js-b-counter.counter ,   .dark-mode .no-item   {
     color: $white
   }
   // .dark-mode i.fa  {
@@ -48,4 +48,6 @@ body.dark-mode {
   .dark-mode label {
     color: $white; 
   }
-  
+//   .dark-mode .social-icon i{
+//     color: $white;
+// }
