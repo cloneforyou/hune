@@ -4,6 +4,7 @@ data/
 node_modules/
 .DS_Store
 .idea
+hero
 resources/
 package.json
 webpack.config.js
