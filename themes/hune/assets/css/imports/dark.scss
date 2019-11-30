@@ -1,52 +1,58 @@
 /* Dark Mode styles */
 body.dark-mode {
-    background: #282828;
+  background: #282828;
+}
+.dark-mode .header,
+.dark-mode .huhu {
+  background: $dbg;
+  z-index: 9999;
+}
+.darkmode a.link-title {
+  color: $white
+}
+.dark-mode .link-list__link {
+  background: rgba(46, 45, 45, .8);
+}
+.dark-mode .timeago {
+  color: $c-primary
+}
+.dark-mode .header__nav-link {
+  color: $white;
+  z-index: 9999;
+  &:hover {
+    background: rgba(0, 0, 0, .1);
   }
-   
-  .dark-mode .header,
-  .dark-mode .huhu {
-    background: $dbg;
-    z-index: 9999;
-  }
-  
-  
-   .darkmode   a.link-title  {
-    color: $white
-  }
- 
-  .dark-mode .link-list__link {
-    background: rgba(46, 45, 45, .8);
-   }
-  
-  .dark-mode .timeago {
-    color: $c-primary
-  }
-  
-  .dark-mode .header__nav-link {
-    color: $white;
-    z-index: 9999;
-    &:hover { background: rgba(0,0,0,.1);}
-  }
-  
-  
-  .dark-mode i.fa  {
-    color: $white
-  }
-  .dark-mode .added i.fa  {
-    color: $dbg;
-  }
-.dark-mode i.fa-bookmark { color: $white; }
-  .dark-mode .share-box {
-    background: rgba(46, 45, 45, .8);
-    /* margin-bottom: 10px; */
-    border: 1px solid #282828;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, .5);
-    height: 120px;
-  }
-  .dark-mode ul.dropdown {background:$dbg;} 
-
+} 
+.dark-mode i.fa {
+  color: $white
+}
+.dark-mode .added i.fa {
+  color: $dbg;
+}
+.dark-mode i.fa-bookmark {
+  color: $white;
+}
+.dark-mode .share-box {
+  background: rgba(46, 45, 45, .8);
+  /* margin-bottom: 10px; */
+  border: 1px solid #282828;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .5);
+  height: 120px;
+}
+.dark-mode ul.dropdown {
+  background: $dbg;
+}
 //   .dark-mode .social-icon i{
 //     color: $white;
 // }
- .dark-mode button.bookmark-icon.js-b-additem.save.added i { color: $dbg;}
- .dark-mode .links a, .darkmode .bookrmak a , .dark-mode i.fa-bookmark , .dark-mode span.js-b-counter.counter , .dark-mode .no-item , .dark-mode label { color: $white;}
+.dark-mode button.bookmark-icon.js-b-additem.save.added i {
+  color: $dbg;
+}
+.dark-mode .links a,
+.darkmode .bookrmak a,
+.dark-mode i.fa-bookmark,
+.dark-mode span.js-b-counter.counter,
+.dark-mode .no-item,
+.dark-mode label {
+  color: $white;
+}
