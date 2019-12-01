@@ -1,0 +1,82 @@
+ 
+
+$color-bg: 				#40424c;
+$color-primary: 		#FFF;
+$color-secondary: 	#999;
+$color-tertiary: 		#000;
+
+ 
+
+.container-audio {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+    height: 100%;
+}
+
+p.track {
+	text-transform: uppercase;
+	color: $color-primary;
+	span {
+		color: $color-secondary;
+	}
+}
+
+button.audio-btn { 
+	// background-color: #282828;
+	// border: 1px solid $color-primary;
+	// border-radius: 50%;
+	color: $color-primary;
+	text-align: center; display: flex; align-items: center;
+	display: inline-block;
+	vertical-align: middle;
+	transition: all 0.2s ease 0;z-index: 9999999;
+	&[data-am-button^="large"] {
+		width: 60px;display: none;
+		height: 60px;
+		// margin: 0 5px;
+		i {
+			font-size: 25px;
+		}
+	}
+	&[data-am-button^="small"] {
+		width: 40px;
+		height: 40px;
+		i {
+			font-size: 14px;
+		}
+	}
+	&:hover {
+		color: $color-secondary;
+		border-color: $color-secondary;
+	}
+	&:focus {
+		outline: none;
+	}
+}
+
+#progress-bar { 
+ 
+    width: 100%;
+    background-color: $color-tertiary;
+    height: 100%;
+    position: relative;
+    /* margin: 1em 0; */
+    position: absolute;
+    top: 0;
+    opacity: 0.1; 
+	#progress {
+		background-color: $color-secondary;
+		height: 100%;
+		position: absolute;
+		left: 0; 
+		transition: width 2.5s linear 0;
+	}
+}
+
+ 

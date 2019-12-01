@@ -40,7 +40,111 @@
 <script type="text/javascript" src="/js/bookmark.js"></script>
 <script type="text/javascript" src="/js/main.js"></script> -->
 <!-- <script type="text/javascript" src="https://d33wubrfki0l68.cloudfront.net/bundles/a0042363d9b1c31c4f167ecf60a11bcc9123eed7.js"></script> -->
+<script>
+  var $player = $('.container-audio')
+  , $playbackClass = 'is-playing'
+  , $fadeDuration = 500
 
+$player.each(function(index) {
+  var $this = $(this)
+    , id = 'audio-player-' + index
+
+  $this.attr('id', id)
+
+  $this.find('.js-control')[0].addEventListener('click',  function() {
+    resetPlayback(id)
+    playback($this, $this.find('audio')  )
+    if ($this.paused) {
+ 
+    $(this).children('i').removeClass('fa-pause');
+    $(this).children('i').addClass('fa-play');
+  } else {
+  
+    $(this).children('i').removeClass('fa-play');
+    $(this).children('i').addClass('fa-pause');
+  }
+  })
+  
+  // Reset state once audio has finished playing
+  $this.find('audio')[0].addEventListener('ended', function() {
+    resetPlayback()
+  })
+})
+
+function playback($player, $audio, $video) {
+  if ($audio[0].paused) {
+    $audio[0].play()
+   
+
+    // $video[0].play()
+    $audio.animate({ volume: 1 }, $fadeDuration)
+    $player.addClass($playbackClass)
+  } else {
+    $audio.animate({ volume: 0 }, $fadeDuration, function() {
+      $audio[0].pause()
+
+      
+      // $video[0].pause()
+    })
+    $player.removeClass($playbackClass)
+  }
+}
+
+function resetPlayback(id) {
+  $player.each(function() {
+    var $this = $(this)
+
+    if ($this.attr('id') !== id) {
+      $this.find('audio').animate({ volume: 0 }, $fadeDuration, function() {
+        $(this)[0].pause()
+        // $this.find('video')[0].pause()
+        
+      })
+      $this.removeClass($playbackClass)
+    }
+  })
+}
+
+$(function() {
+
+var audio = $("audio")[0];
+
+// $('#btn-play-pause').on('click', function() {
+//   //Play/pause the track
+//   $('#btn-play-pause').each(function(){
+//   if (audio.paused == false) {
+ 
+//     $(this).children('i').removeClass('fa-pause');
+//     $(this).children('i').addClass('fa-play');
+//   } else {
+  
+//     $(this).children('i').removeClass('fa-play');
+//     $(this).children('i').addClass('fa-pause');
+//   }
+// });
+// });
+
+ 
+
+ 
+
+function updateProgress() {
+  //Updates the progress bar
+  var progress = document.getElementById("progress");
+  var value = 0;
+  if (audio.currentTime > 0) {
+    value = Math.floor((100 / audio.duration) * audio.currentTime);
+  }
+  progress.style.width = value + "%";
+}
+
+//Progress Bar event listener
+audio.addEventListener("timeupdate", updateProgress, false);
+
+});
+
+
+</script>
 
 <script>
   !function(g,s,q,r,d){r=g[r]=g[r]||function(){(r.q=r.q||[]).push(
