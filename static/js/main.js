@@ -127,7 +127,18 @@ $('.share-icon').click(function() {
     $(this).closest('.share-box').find('.link-title, .fa-play, .fa-pause,.btm').hide();
     $(this).closest('.share-box').find('.share-icons').fadeIn();
     
+
+
 });
+$('.fa-play').click(function() {
+
+   
+  if(localStorage.getItem("mode")=="dark")
+
+$('.link-list__link').css("background-color","rgba(46, 45, 45, 0.8)");
+else
+$('.link-list__link').css("background-color","rgb(243, 242, 242)");
+}); 
 
 $( ".share-box" ).mouseleave(function() {
 $('.share-icons').hide();
