@@ -42,6 +42,7 @@
 <!-- <script type="text/javascript" src="https://d33wubrfki0l68.cloudfront.net/bundles/a0042363d9b1c31c4f167ecf60a11bcc9123eed7.js"></script> -->
 <script>
   var $player = $('.container-audio ')
+ 
   , $playbackClass = 'is-playing'
   , $fadeDuration = 500
 
@@ -87,17 +88,18 @@ $player.each(function(index) {
 function playback($player, $audio, $video) {
   if ($audio[0].paused) {
     $audio[0].play()
-  
+    $('.link-list__link').removeClass('is-cool');
+    $player.closest('.link-list__link').addClass('is-cool');
 
     // $video[0].play()
     $audio.animate({ volume: 1 }, $fadeDuration)
-    $player.addClass($playbackClass)
+    $(this).addClass($playbackClass)
     
   } else {
     $audio.animate({ volume: 0 }, $fadeDuration, function() {
       $audio[0].pause()
       $player.find('i').removeClass('fa-pause');
-      
+      $('.link-list__link').removeClass('is-cool');
       // $video[0].pause()
     })
     $player.removeClass($playbackClass)

@@ -105,7 +105,7 @@ function randomColor(){
 var randNumber = Math.random() * 11111111;
 var randHex = parseInt(randNumber).toString(16);
 var randColor = "#" + randHex;
-$('.header__logo, .cs').css('background-color', randColor);
+$('.header__logo, .cs, .is-cool').css('background-color', randColor);
 $('.active').css('color', randColor);
 $(".link-list__link").mouseover(function() {
 $(this).css("background-color", randColor);
@@ -118,13 +118,13 @@ $(this).css("background-color","rgb(243, 242, 242)");
 });  
 }
 $('.link-list__link').mouseover(function() {
-$(this).find('.share-icon, .audio-btn, .bookmark-icon').show()
+$(this).find('.share-icon, #btn-play-pause, .bookmark-icon').show()
 }).mouseout(function() { 
-    $('.share-icon, .audio-btn, .bookmark-icon').hide();
+    $('.share-icon, #btn-play-pause, .bookmark-icon').hide();
 });
 $('.share-icon').click(function() {
 
-    $(this).closest('.share-box').find('.link-title,.audio-btn,.btm').hide();
+    $(this).closest('.share-box').find('.link-title, .fa-play, .fa-pause,.btm').hide();
     $(this).closest('.share-box').find('.share-icons').fadeIn();
     
 });
@@ -132,7 +132,7 @@ $('.share-icon').click(function() {
 $( ".share-box" ).mouseleave(function() {
 $('.share-icons').hide();
 
-$('.link-title,.audio-btn,.btm').show();
+$('.link-title,#btn-play-pause,.btm').show();
 });
 
 $(function() {

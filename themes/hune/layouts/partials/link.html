@@ -1,4 +1,4 @@
-<div class="link-list__link">
+<div class="link-list__link ">
   <div class="share-box"> 
       {{ if (not (isset .Params "enclosure")) }}
     <a class="link-title" href='{{ .Params.link }}' rel="nofollow noopener" target="_blank">
@@ -71,7 +71,7 @@
 
       <div class="container-audio audio-player">
            <!-- <button class="audio-btn" data-am-button="small" id="btn-mute"><i class="fa fa-volume-up"></i></button> -->
-          <button title="Play episode" class="audio-btn audio-player__control js-control" data-am-button="large" id="btn-play-pause"><i class="fa fa-play"></i></button>
+          <button  class="audio-btn audio-player__control js-control" data-am-button="large" id="btn-play-pause" title="Play episode"><i class="fa fa-play" ></i></button>
           <!-- <button class="audio-btn" data-am-button="small" id="btn-stop"><i class="fa fa-stop"></i></button>	 -->
           <div id="progress-bar"><span id="progress"></span></div>	
           <audio id="myAudio" preload="none">
