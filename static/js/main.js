@@ -118,7 +118,7 @@ $(this).css("background-color","rgb(243, 242, 242)");
 });  
 }
 $('.link-list__link').mouseover(function() {
-$(this).find('.share-icon, #btn-play-pause, .bookmark-icon').show()
+$(this).find('.share-icon, .audio-btn, .bookmark-icon').show()
 }).mouseout(function() { 
     $('.share-icon, #btn-play-pause, .bookmark-icon').hide();
 });
@@ -143,7 +143,7 @@ $('.link-list__link').css("background-color","rgb(243, 242, 242)");
 $( ".share-box" ).mouseleave(function() {
 $('.share-icons').hide();
 
-$('.link-title,#btn-play-pause,.btm').show();
+$('.link-title, .fa-play, .fa-pause,.btm').show();
 });
 
 $(function() {
