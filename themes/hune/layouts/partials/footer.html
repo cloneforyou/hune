@@ -61,9 +61,9 @@ $player.each(function(index) {
         $('.js-control').children('i').removeClass('fa-pause');
         $('.js-control').children('i').addClass('fa-play');
         $(this).children('i').addClass('fa-pause');
-    } else {
-      $(this).children('i').removeClass('fa-pause');
-        $(this).children('i').addClass('fa-play');
+    } else if 
+      ($(this).children('i').hasClass('fa-pause')) {
+        $(this).children('i').removeClass('fa-pause');
     }
 
   //   if ($this.paused) {
@@ -96,7 +96,7 @@ function playback($player, $audio, $video) {
   } else {
     $audio.animate({ volume: 0 }, $fadeDuration, function() {
       $audio[0].pause()
-  
+      $player.find('i').removeClass('fa-pause');
       
       // $video[0].pause()
     })
@@ -113,11 +113,12 @@ function resetPlayback(id) {
       $this.find('audio').animate({ volume: 0 }, $fadeDuration, function() {
         $(this)[0].pause()
         // $this.find('video')[0].pause()
-     
+ 
       })
       $this.removeClass($playbackClass)
-      $this.children('i').removeClass('fa-pause');
-      $this.children('i').addClass('fa-play');
+      // $this.children('i').removeClass('fa-pause');
+      // $this.children('i').addClass('fa-play');
+      $this.find('i').removeClass('fa-pause');
     }
   })
 }
