@@ -69,7 +69,8 @@ button.audio-btn {
     /* margin: 1em 0; */
     position: absolute;
     top: 0;
-    opacity: 0.1; 
+	opacity: 0.1; 
+	z-index: -1;
 	#progress {
 		background-color: $color-secondary;
 		height: 100%;

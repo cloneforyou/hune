@@ -41,7 +41,7 @@
 <script type="text/javascript" src="/js/main.js"></script> -->
 <!-- <script type="text/javascript" src="https://d33wubrfki0l68.cloudfront.net/bundles/a0042363d9b1c31c4f167ecf60a11bcc9123eed7.js"></script> -->
 <script>
-  var $player = $('.container-audio')
+  var $player = $('.container-audio ')
   , $playbackClass = 'is-playing'
   , $fadeDuration = 500
 
@@ -54,39 +54,54 @@ $player.each(function(index) {
   $this.find('.js-control')[0].addEventListener('click',  function() {
     resetPlayback(id)
     playback($this, $this.find('audio')  )
-    if ($this.paused) {
+
+      if ($(this).children('i').hasClass("fa-play")) {
+        $(this).children('i').removeClass('fa-play');
+        $(this).children('i').addClass('fa-pause');
+        $('.js-control').children('i').removeClass('fa-pause');
+        $('.js-control').children('i').addClass('fa-play');
+        $(this).children('i').addClass('fa-pause');
+    } else {
+      $(this).children('i').removeClass('fa-pause');
+        $(this).children('i').addClass('fa-play');
+    }
+
+  //   if ($this.paused) {
  
-    $(this).children('i').removeClass('fa-pause');
-    $(this).children('i').addClass('fa-play');
-  } else {
+  //   $(this).children('i').removeClass('fa-play');
+  //   $(this).children('i').addClass('fa-pause');
+  // } else {
   
-    $(this).children('i').removeClass('fa-play');
-    $(this).children('i').addClass('fa-pause');
-  }
+  //   $(this).children('i').removeClass('fa-play');
+  //   $(this).children('i').addClass('fa-pause');
+  // }
   })
   
   // Reset state once audio has finished playing
   $this.find('audio')[0].addEventListener('ended', function() {
     resetPlayback()
+    
   })
 })
 
 function playback($player, $audio, $video) {
   if ($audio[0].paused) {
     $audio[0].play()
-   
+  
 
     // $video[0].play()
     $audio.animate({ volume: 1 }, $fadeDuration)
     $player.addClass($playbackClass)
+    
   } else {
     $audio.animate({ volume: 0 }, $fadeDuration, function() {
       $audio[0].pause()
-
+  
       
       // $video[0].pause()
     })
     $player.removeClass($playbackClass)
+ 
   }
 }
 
@@ -98,9 +113,11 @@ function resetPlayback(id) {
       $this.find('audio').animate({ volume: 0 }, $fadeDuration, function() {
         $(this)[0].pause()
         // $this.find('video')[0].pause()
-        
+     
       })
       $this.removeClass($playbackClass)
+      $this.children('i').removeClass('fa-pause');
+      $this.children('i').addClass('fa-play');
     }
   })
 }
