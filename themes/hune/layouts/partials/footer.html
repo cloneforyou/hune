@@ -1,6 +1,23 @@
 
 <footer>
   <!-- <p>made with ☕ by <a href="https://12bit.vn" target="_blank" rel="nofollow noopener">12bit.vn</a></p> -->
+  <div class="pcast-player  audio-player">
+    <div class="pcast-player-controls">
+      <button class="pcast-play js-control play-btn"><i class="fa fa-play"></i><span>Play</span></button>
+      <button class="pcast-pause pause-btn "><i class="fa fa-pause"></i><span>Pause</span></button>
+      <button class="pcast-rewind"><i class="fa fa-undo"></i><span>Rewind</span></button>
+      <span class="pcast-currenttime pcast-time">00:00</span>
+      <progress class="pcast-progress" value="0"></progress>
+      <span class="pcast-duration pcast-time">00:00</span>
+      <button class="pcast-speed">1x</button>
+      <button class="pcast-mute"><i class="fa fa-volume-up"></i><span>Mute/Unmute</span></button>
+    </div>
+    <audio class="audio" id="my-audio">
+    <source id="ogg_src" src="" type="audio/mpeg" />
+  </audio>
+    <!-- <a class="pcast-download" href="https://s3.amazonaws.com/ShopTalk/080_rapidfire_19.mp3" download>Download MP3</a> -->
+  </div>
+  
 </footer>
 
 {{ if .Site.IsServer }}
@@ -41,21 +58,26 @@
 <script type="text/javascript" src="/js/main.js"></script> -->
 <!-- <script type="text/javascript" src="https://d33wubrfki0l68.cloudfront.net/bundles/a0042363d9b1c31c4f167ecf60a11bcc9123eed7.js"></script> -->
 <script>
-  var $player = $('.container-audio ')
+  var $player = $('.container-audio  ')
  
   , $playbackClass = 'is-playing'
   , $fadeDuration = 500
 
 $player.each(function(index) {
-  var $this = $(this)
+  var $this = $(this) 
     , id = 'audio-player-' + index
-
-  $this.attr('id', id)
-
+ 
+  $this.attr('id', id),
+ 
+ 
   $this.find('.js-control')[0].addEventListener('click',  function() {
     resetPlayback(id)
+    
+    $('.pcast-play').hide();
+    $('.pcast-pause').show();
+    $('.play-btn').children('i').addClass('fa-pause');
     playback($this, $this.find('audio')  )
-
+  
       if ($(this).children('i').hasClass("fa-play")) {
         $(this).children('i').removeClass('fa-play');
         $(this).children('i').addClass('fa-pause');
@@ -87,7 +109,21 @@ $player.each(function(index) {
 
 function playback($player, $audio, $video) {
   if ($audio[0].paused) {
-    $audio[0].play()
+    $("#my-audio")[0].load();
+    if($('.pcast-player').is(':visible')){
+      $(".pcast-player").show();
+     } else {
+    $(".pcast-player").slideToggle();
+    };
+     var $myp = $('#ogg_src')
+    var audio = $('#my-audio');
+    var source = $player.closest('.link-list__link').find('.wahya').attr('src');
+  
+    $myp.attr('src', source);
+    // $('#my-audio').get(0).play();
+    // $audio[0].play()
+    //$audio[0].play()
+    $("#my-audio")[0].play();
     $('.link-list__link').removeClass('is-cool');
     $player.closest('.link-list__link').addClass('is-cool');
 
@@ -103,19 +139,21 @@ function playback($player, $audio, $video) {
       // $video[0].pause()
     })
     $player.removeClass($playbackClass)
- 
+
   }
 }
 
 function resetPlayback(id) {
   $player.each(function() {
     var $this = $(this)
-
+   
     if ($this.attr('id') !== id) {
+       
+
       $this.find('audio').animate({ volume: 0 }, $fadeDuration, function() {
         $(this)[0].pause()
-        // $this.find('video')[0].pause()
- 
+      
+        
       })
       $this.removeClass($playbackClass)
       // $this.children('i').removeClass('fa-pause');
@@ -126,8 +164,8 @@ function resetPlayback(id) {
 }
 
 $(function() {
+  var audio = $("audio")[0];
 
-var audio = $("audio")[0];
 
 // $('#btn-play-pause').on('click', function() {
 //   //Play/pause the track
@@ -146,7 +184,12 @@ var audio = $("audio")[0];
 
  
 
- 
+// $(".fa-play").click(function(){
+//     var mp3Url = $(this).data('rel');
+//     $(".audio").attr('src', mp3Url);
+// });
+
+// $(".fa-play").trigger('click');
 
 function updateProgress() {
   //Updates the progress bar
@@ -178,5 +221,96 @@ audio.addEventListener("timeupdate", updateProgress, false);
 
   <script>function htmlEntities(e){return String(e).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;")}var date=new Date,DateString=date.toDateString(),ISOString=date.toISOString(),timestamp=date.getTime()/100>>0,temps=['<abbr class="timeago" title="'+DateString+'">'+DateString+"</abbr>",'<abbr class="timeago" title="'+ISOString+'">'+ISOString+"</abbr>",'<time class="timeago" datetime="'+ISOString+'">'+ISOString+"</time>",'<span class="timeago" title="'+timestamp+'">'+timestamp+"</span>"],elements=document.getElementsByClassName("usage"),j=0;for(var i in elements){var $this=elements[i];"object"==typeof $this&&(console.log(temps[j]),$this.innerHTML=temps[j]+"<code>"+htmlEntities(temps[j++])+"</code>")}(function e(t){var a={prefix:"",suffix:" ago",seconds:"1 minute",minute:"1 minute",minutes:"%d minutes",hour:"1 hour",hours:"%d hours",day:"1 day",days:"%d days",month:"1 month",months:"%d months",year:"1 year",years:"%d years"},i=function(e,t){return a[e]&&a[e].replace(/%d/i,Math.abs(Math.round(t)))},r=function(e){if(e){e=e.replace(/\.\d+/,""),e=e.replace(/-/,"/").replace(/-/,"/"),e=e.replace(/T/," ").replace(/Z/," UTC"),e=e.replace(/([\+\-]\d\d)\:?(\d\d)/," $1$2"),e=new Date(1e3*e||e);var t=new Date,r=.001*(t.getTime()-e)>>0,n=r/60,s=n/60,m=s/24,o=m/365;return a.prefix+(r<45&&i("seconds",r)||r<90&&i("minute",1)||n<45&&i("minutes",n)||n<90&&i("hour",1)||s<24&&i("hours",s)||s<42&&i("day",1)||m<30&&i("days",m)||m<45&&i("month",1)||m<365&&i("months",m/30)||o<1.5&&i("year",1)||i("years",o))+a.suffix}},n=document.getElementsByClassName("timeago");for(var s in n){var m=n[s];"object"==typeof m&&(m.innerHTML=r(m.getAttribute("title")||m.getAttribute("datetime")))}setTimeout(e,1)})();</script>
 
+
+
+  <script>
+  (function(){
+
+var pcastPlayers = document.querySelectorAll('.pcast-player');
+var speeds = [ 1, 1.5, 2, 2.5, 3 ]    
+
+for(i=0;i<pcastPlayers.length;i++) {
+  var player = pcastPlayers[i];
+  var audio = player.querySelector('.audio');
+  var play = player.querySelector('.pcast-play');
+  var pause = player.querySelector('.pcast-pause');
+  var rewind = player.querySelector('.pcast-rewind');
+  var progress = player.querySelector('.pcast-progress');
+  var speed = player.querySelector('.pcast-speed');
+  var mute = player.querySelector('.pcast-mute');
+  var currentTime = player.querySelector('.pcast-currenttime');
+  var duration = player.querySelector('.pcast-duration');
+  
+  var currentSpeedIdx = 0;
+
+  pause.style.display = 'none';
+  
+  var toHHMMSS = function ( totalsecs ) {
+      var sec_num = parseInt(totalsecs, 10); // don't forget the second param
+      var hours   = Math.floor(sec_num / 3600);
+      var minutes = Math.floor((sec_num - (hours * 3600)) / 60);
+      var seconds = sec_num - (hours * 3600) - (minutes * 60);
+
+      if (hours   < 10) {hours   = "0"+hours; }
+      if (minutes < 10) {minutes = "0"+minutes;}
+      if (seconds < 10) {seconds = "0"+seconds;}
+      
+      var time = hours+':'+minutes+':'+seconds;
+      return time;
+  }
+  
+  audio.addEventListener('loadedmetadata', function(){
+    progress.setAttribute('max', Math.floor(audio.duration));
+    duration.textContent  = toHHMMSS(audio.duration);
+  });
+  
+  audio.addEventListener('timeupdate', function(){
+    progress.setAttribute('value', audio.currentTime);
+    currentTime.textContent  = toHHMMSS(audio.currentTime);
+  });
+  
+  play.addEventListener('click', function(){
+    this.style.display = 'none';
+    pause.style.display = 'inline-block';
+    pause.focus();
+    audio.play();
+  }, false);
+
+  pause.addEventListener('click', function(){
+    this.style.display = 'none';
+    play.style.display = 'inline-block';
+    play.focus();
+    audio.pause();
+  }, false);
+
+  rewind.addEventListener('click', function(){
+    audio.currentTime -= 30;
+  }, false);
+  
+  progress.addEventListener('click', function(e){
+    audio.currentTime = Math.floor(audio.duration) * (e.offsetX / e.target.offsetWidth);
+  }, false);
+
+  speed.addEventListener('click', function(){
+    currentSpeedIdx = currentSpeedIdx + 1 < speeds.length ? currentSpeedIdx + 1 : 0;
+    audio.playbackRate = speeds[currentSpeedIdx];
+    this.textContent  = speeds[currentSpeedIdx] + 'x';
+    return true;
+  }, false);
+
+  mute.addEventListener('click', function() {
+    if(audio.muted) {
+      audio.muted = false;
+      this.querySelector('.fa').classList.remove('fa-volume-off');
+      this.querySelector('.fa').classList.add('fa-volume-up');
+    } else {
+      audio.muted = true;
+      this.querySelector('.fa').classList.remove('fa-volume-up');
+      this.querySelector('.fa').classList.add('fa-volume-off');
+    }
+  }, false);
+}
+})(this);
+  </script>
 </body>
 </html>
