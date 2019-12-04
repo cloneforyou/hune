@@ -2,16 +2,29 @@
 <footer>
   <!-- <p>made with ☕ by <a href="https://12bit.vn" target="_blank" rel="nofollow noopener">12bit.vn</a></p> -->
   <div class="pcast-player  audio-player">
+    <div class="ptime">
+       
+
+    <progress class="pcast-progress" value="0"></progress> 
+    <!-- <input  class="pcast-progress"  type="range"   value="0"> -->
+    
+        </div>
+        <div class="ptime nt">
+        <span class="pcast-currenttime pcast-time">00:00</span>     
+    <span class="pcast-duration pcast-time">00:00</span>
+    </div>
     <div class="pcast-player-controls">
-      <button class="pcast-play js-control play-btn"><i class="fa fa-play"></i><span>Play</span></button>
-      <button class="pcast-pause pause-btn "><i class="fa fa-pause"></i><span>Pause</span></button>
-      <button class="pcast-rewind"><i class="fa fa-undo"></i><span>Rewind</span></button>
-      <span class="pcast-currenttime pcast-time">00:00</span>
-      <progress class="pcast-progress" value="0"></progress>
-      <span class="pcast-duration pcast-time">00:00</span>
-      <button class="pcast-speed">1x</button>
-      <button class="pcast-mute"><i class="fa fa-volume-up"></i><span>Mute/Unmute</span></button>
+
+     
+      <button class="pcast-rewind"><i class="fa fa-undo fp"></i><span>Rewind</span></button>
+      <button class="pcast-play js-control play-btn"><i class="fa fa-play fp"></i><span>Play</span></button>
+      <button class="pcast-pause pause-btn "><i class="fa fa-pause fp"></i><span>Pause</span></button>
+      <button class="pcast-speed fp">1x</button><br>
+     
+      <!-- <button class="pcast-mute"><i class="fa fa-volume-up"></i><span>Mute/Unmute</span></button> -->
     </div> 
+  
+      
     <audio class="audio" id="my-audio">
     <source id="ogg_src" src="" type="audio/mpeg" />
   </audio>
@@ -235,7 +248,7 @@ for(i=0;i<pcastPlayers.length;i++) {
   var play = player.querySelector('.pcast-play');
   var pause = player.querySelector('.pcast-pause');
   var rewind = player.querySelector('.pcast-rewind');
-  var progress = player.querySelector('.pcast-progress');
+  var progress = player.querySelector('.pcast-progress, #progress');
   var speed = player.querySelector('.pcast-speed');
   var mute = player.querySelector('.pcast-mute');
   var currentTime = player.querySelector('.pcast-currenttime');
@@ -255,7 +268,8 @@ for(i=0;i<pcastPlayers.length;i++) {
       if (minutes < 10) {minutes = "0"+minutes;}
       if (seconds < 10) {seconds = "0"+seconds;}
       
-      var time = hours+':'+minutes+':'+seconds;
+      // var time = hours+':'+minutes+':'+seconds;
+      var time =  minutes+':'+seconds;
       return time;
   }
   
@@ -284,7 +298,9 @@ for(i=0;i<pcastPlayers.length;i++) {
   }, false);
 
   rewind.addEventListener('click', function(){
+
     audio.currentTime -= 30;
+    
   }, false);
   
   progress.addEventListener('click', function(e){
@@ -298,17 +314,17 @@ for(i=0;i<pcastPlayers.length;i++) {
     return true;
   }, false);
 
-  mute.addEventListener('click', function() {
-    if(audio.muted) {
-      audio.muted = false;
-      this.querySelector('.fa').classList.remove('fa-volume-off');
-      this.querySelector('.fa').classList.add('fa-volume-up');
-    } else {
-      audio.muted = true;
-      this.querySelector('.fa').classList.remove('fa-volume-up');
-      this.querySelector('.fa').classList.add('fa-volume-off');
-    }
-  }, false);
+  // mute.addEventListener('click', function() {
+  //   if(audio.muted) {
+  //     audio.muted = false;
+  //     this.querySelector('.fa').classList.remove('fa-volume-off');
+  //     this.querySelector('.fa').classList.add('fa-volume-up');
+  //   } else {
+  //     audio.muted = true;
+  //     this.querySelector('.fa').classList.remove('fa-volume-up');
+  //     this.querySelector('.fa').classList.add('fa-volume-off');
+  //   }
+  // }, false);
 }
 })(this);
   </script>

@@ -106,7 +106,7 @@ var randNumber = Math.random() * 11111111;
 var randHex = parseInt(randNumber).toString(16);
 var randColor = "#" + randHex;
 $('.header__logo, .cs, .is-cool').css('background-color', randColor);
-$('.active').css('color', randColor);
+$('.active,  .fp').css('color', randColor);
 $(".link-list__link").mouseover(function() {
 $(this).css("background-color", randColor);
 }).mouseout(function() {
