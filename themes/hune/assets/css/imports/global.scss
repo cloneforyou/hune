@@ -78,7 +78,7 @@ footer {
 }
 
 .share-box {
-  height: 120px;
+  height: 110px;
   // border: 1px solid #eee;
   box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
 
@@ -417,7 +417,8 @@ svg {
   text-overflow: ellipsis;
   line-height: 1.425;
   z-index: 999;
- 
+  padding-left: 5px;
+  padding-top: 5px;;
 
 }
 
