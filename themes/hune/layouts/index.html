@@ -10,9 +10,10 @@
                         <div class="bookmark js-b-dropdown" title="Your bookmark links"></div>
                 {{ $paginator := .Paginate (where .Pages "Type" "links") }}
                 {{ range $paginator.Pages }}
-                {{ if in .Params.topic "Webdev" }}
+                {{ if in .Params.topic "Webdev" | or .Params.topic "Hacker News"}}
+                
                 {{ partial "link" . }}
-                {{end}}
+                {{end}}  
                 {{ end }}
 
          
