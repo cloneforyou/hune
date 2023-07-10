@@ -1,0 +1,9 @@
+# A redirect rule with all the supported properties 
+[[redirects]]
+  from = "/site"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/topic"
+  to = "/"
+  status = 301
