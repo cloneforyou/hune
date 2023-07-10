@@ -29,7 +29,7 @@ params:
     - img/home.png
   cta:
     title: Add my site
-    url: 'https://github.com/cioranique/hune'
+    url: 'https://github.com/cloneforyou/hune'
 blackfriday:
   hrefTargetBlank: true
   noreferrerLinks: true 
